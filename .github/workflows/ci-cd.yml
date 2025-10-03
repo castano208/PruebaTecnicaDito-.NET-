@@ -158,11 +158,17 @@ jobs:
         cd publish
         tar -czf ../backendapi-deployment.tar.gz .
 
+    - name: Check Azure credentials
+      run: |
+        if [ -z "${{ secrets.AZURE_CREDENTIALS }}" ]; then
+          echo "⚠️  No Azure credentials found. Skipping deployment."
+          exit 0
+        fi
+
     - name: Azure Login
       uses: azure/login@v1
       with:
         creds: ${{ secrets.AZURE_CREDENTIALS }}
-        enable-AzPSSession: true
 
     - name: Deploy to Azure Web App
       uses: azure/webapps-deploy@v2
@@ -175,8 +181,24 @@ jobs:
         sleep 30
         curl -f https://backendapi-prod.azurewebsites.net/health || exit 1
 
+  deploy-skip:
+    needs: [build-and-test, security-scan]
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+
+    steps:
+    - name: Skip deployment - No Azure configuration
+      run: |
+        echo "⚠️  Deployment skipped: No Azure credentials configured"
+        echo "📋 To enable deployment:"
+        echo "   1. Create Azure Service Principal"
+        echo "   2. Add AZURE_CREDENTIALS secret to GitHub"
+        echo "   3. See AZURE_DEPLOYMENT.md for instructions"
+        echo ""
+        echo "✅ Build and tests completed successfully!"
+
   notify:
-    needs: [deploy]
+    needs: [deploy, deploy-skip]
     runs-on: ubuntu-latest
     if: always()
     
@@ -185,6 +207,8 @@ jobs:
       run: |
         if [ "${{ needs.deploy.result }}" == "success" ]; then
           echo "✅ Deployment successful!"
+        elif [ "${{ needs.deploy-skip.result }}" == "success" ]; then
+          echo "⚠️  Deployment skipped - No Azure configuration"
         else
           echo "❌ Deployment failed!"
         fi

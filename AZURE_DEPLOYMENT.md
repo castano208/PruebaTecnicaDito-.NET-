@@ -59,9 +59,15 @@ az webapp deployment list-publishing-profiles --name backendapi-prod --resource-
 
 ### **Secrets Requeridos**
 
+### **Secrets Requeridos**
+
 | Secret | Descripción | Ejemplo |
 |--------|-------------|---------|
-| `AZURE_CREDENTIALS` | Service Principal JSON | `{"clientId":"...","clientSecret":"..."}` |
+| `AZURE_CREDENTIALS` | Service Principal JSON completo | `{"clientId":"...","clientSecret":"..."}` |
+
+#### **Opcional**
+| Secret | Descripción | Ejemplo |
+|--------|-------------|---------|
 | `AZURE_WEBAPP_PUBLISH_PROFILE` | Publish Profile XML | `<publishData>...</publishData>` |
 
 ### **Cómo Agregar Secrets en GitHub**
@@ -129,30 +135,29 @@ az webapp log download --name backendapi-prod --resource-group BackendAPI-RG
 ### **Error: "Not all values are present. Ensure 'client-id' and 'tenant-id' are supplied"**
 
 **Solución:**
-1. **Verificar formato del JSON:**
+1. **Crear Service Principal con formato correcto:**
    ```bash
-   # El JSON debe tener exactamente estos campos:
+   az ad sp create-for-rbac --name "BackendAPI-GitHub" --role contributor --scopes /subscriptions/{subscription-id}/resourceGroups/BackendAPI-RG --sdk-auth
+   ```
+
+2. **Copiar el JSON completo generado y agregarlo como secret:**
+   - **Nombre**: `AZURE_CREDENTIALS`
+   - **Valor**: El JSON completo del comando anterior
+
+3. **Formato correcto del JSON:**
+   ```json
    {
-     "clientId": "...",
-     "clientSecret": "...",
-     "subscriptionId": "...",
-     "tenantId": "..."
+     "clientId": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+     "clientSecret": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+     "subscriptionId": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+     "tenantId": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+     "activeDirectoryEndpointUrl": "https://login.microsoftonline.com",
+     "resourceManagerEndpointUrl": "https://management.azure.com/",
+     "activeDirectoryGraphResourceId": "https://graph.windows.net/",
+     "sqlManagementEndpointUrl": "https://management.core.windows.net:8443/",
+     "galleryEndpointUrl": "https://gallery.azure.com/",
+     "managementEndpointUrl": "https://management.core.windows.net/"
    }
-   ```
-
-2. **Regenerar Service Principal:**
-   ```bash
-   # Eliminar el anterior
-   az ad sp delete --id {client-id}
-   
-   # Crear uno nuevo
-   az ad sp create-for-rbac --name "BackendAPI-GitHub-New" --role contributor --scopes /subscriptions/{subscription-id}/resourceGroups/BackendAPI-RG --sdk-auth
-   ```
-
-3. **Verificar permisos:**
-   ```bash
-   # Verificar que el service principal tiene acceso
-   az role assignment list --assignee {client-id} --scope /subscriptions/{subscription-id}/resourceGroups/BackendAPI-RG
    ```
 
 ### **Error: "Deployment Failed"**
