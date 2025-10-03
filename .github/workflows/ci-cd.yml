@@ -158,11 +158,15 @@ jobs:
         cd publish
         tar -czf ../backendapi-deployment.tar.gz .
 
+    - name: Azure Login
+      uses: azure/login@v1
+      with:
+        creds: ${{ secrets.AZURE_CREDENTIALS }}
+
     - name: Deploy to Azure Web App
       uses: azure/webapps-deploy@v2
       with:
         app-name: 'backendapi-prod'
-        publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
         package: './publish'
 
     - name: Health check after deployment
