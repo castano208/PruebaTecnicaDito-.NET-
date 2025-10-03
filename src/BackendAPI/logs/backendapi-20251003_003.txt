@@ -1,0 +1,111 @@
+2025-10-03 11:03:40.791 -05:00 [WRN] The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert.
+2025-10-03 13:04:27.815 -05:00 [INF] Executed DbCommand (27ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA journal_mode = 'wal';
+2025-10-03 13:04:28.063 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Productos" (
+    "Id" INTEGER NOT NULL CONSTRAINT "PK_Productos" PRIMARY KEY AUTOINCREMENT,
+    "Nombre" TEXT NOT NULL,
+    "Descripcion" TEXT NULL,
+    "Precio" decimal(18,2) NOT NULL,
+    "Stock" INTEGER NOT NULL,
+    "Categoria" TEXT NULL,
+    "Codigo" TEXT NULL,
+    "ImagenUrl" TEXT NULL,
+    "FechaCreacion" TEXT NOT NULL,
+    "FechaModificacion" TEXT NULL,
+    "Activo" INTEGER NOT NULL DEFAULT 1
+);
+2025-10-03 13:04:28.074 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Roles" (
+    "Id" INTEGER NOT NULL CONSTRAINT "PK_Roles" PRIMARY KEY AUTOINCREMENT,
+    "Nombre" TEXT NOT NULL,
+    "Descripcion" TEXT NULL,
+    "FechaCreacion" TEXT NOT NULL,
+    "FechaModificacion" TEXT NULL,
+    "Activo" INTEGER NOT NULL DEFAULT 1
+);
+2025-10-03 13:04:28.083 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Usuarios" (
+    "Id" INTEGER NOT NULL CONSTRAINT "PK_Usuarios" PRIMARY KEY AUTOINCREMENT,
+    "Nombre" TEXT NOT NULL,
+    "Apellido" TEXT NOT NULL,
+    "Email" TEXT NOT NULL,
+    "Telefono" TEXT NOT NULL,
+    "Direccion" TEXT NULL,
+    "FechaNacimiento" TEXT NOT NULL,
+    "TipoDocumento" TEXT NULL,
+    "NumeroDocumento" TEXT NULL,
+    "PasswordHash" TEXT NOT NULL,
+    "RefreshToken" TEXT NULL,
+    "RefreshTokenExpiryTime" TEXT NULL,
+    "FechaCreacion" TEXT NOT NULL,
+    "FechaModificacion" TEXT NULL,
+    "Activo" INTEGER NOT NULL DEFAULT 1
+);
+2025-10-03 13:04:28.092 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Pedidos" (
+    "Id" INTEGER NOT NULL CONSTRAINT "PK_Pedidos" PRIMARY KEY AUTOINCREMENT,
+    "UsuarioId" INTEGER NOT NULL,
+    "NumeroPedido" TEXT NOT NULL,
+    "FechaPedido" TEXT NOT NULL,
+    "Estado" TEXT NOT NULL,
+    "Total" decimal(18,2) NOT NULL,
+    "Comentarios" TEXT NULL,
+    "DireccionEntrega" TEXT NULL,
+    "FechaCreacion" TEXT NOT NULL,
+    "FechaModificacion" TEXT NULL,
+    "Activo" INTEGER NOT NULL DEFAULT 1,
+    CONSTRAINT "FK_Pedidos_Usuarios_UsuarioId" FOREIGN KEY ("UsuarioId") REFERENCES "Usuarios" ("Id") ON DELETE RESTRICT
+);
+2025-10-03 13:04:28.099 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "UsuarioRoles" (
+    "Id" INTEGER NOT NULL CONSTRAINT "PK_UsuarioRoles" PRIMARY KEY AUTOINCREMENT,
+    "UsuarioId" INTEGER NOT NULL,
+    "RolId" INTEGER NOT NULL,
+    "FechaCreacion" TEXT NOT NULL,
+    "FechaModificacion" TEXT NULL,
+    "Activo" INTEGER NOT NULL DEFAULT 1,
+    CONSTRAINT "FK_UsuarioRoles_Roles_RolId" FOREIGN KEY ("RolId") REFERENCES "Roles" ("Id") ON DELETE RESTRICT,
+    CONSTRAINT "FK_UsuarioRoles_Usuarios_UsuarioId" FOREIGN KEY ("UsuarioId") REFERENCES "Usuarios" ("Id") ON DELETE CASCADE
+);
+2025-10-03 13:04:28.104 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "PedidoItems" (
+    "Id" INTEGER NOT NULL CONSTRAINT "PK_PedidoItems" PRIMARY KEY AUTOINCREMENT,
+    "PedidoId" INTEGER NOT NULL,
+    "ProductoId" INTEGER NOT NULL,
+    "Cantidad" INTEGER NOT NULL,
+    "PrecioUnitario" decimal(18,2) NOT NULL,
+    "Subtotal" decimal(18,2) NOT NULL,
+    "FechaCreacion" TEXT NOT NULL,
+    "FechaModificacion" TEXT NULL,
+    "Activo" INTEGER NOT NULL DEFAULT 1,
+    CONSTRAINT "FK_PedidoItems_Pedidos_PedidoId" FOREIGN KEY ("PedidoId") REFERENCES "Pedidos" ("Id") ON DELETE CASCADE,
+    CONSTRAINT "FK_PedidoItems_Productos_ProductoId" FOREIGN KEY ("ProductoId") REFERENCES "Productos" ("Id") ON DELETE RESTRICT
+);
+2025-10-03 13:04:28.112 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_PedidoItems_PedidoId" ON "PedidoItems" ("PedidoId");
+2025-10-03 13:04:28.118 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_PedidoItems_ProductoId" ON "PedidoItems" ("ProductoId");
+2025-10-03 13:04:28.122 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX "IX_Pedidos_NumeroPedido" ON "Pedidos" ("NumeroPedido");
+2025-10-03 13:04:28.126 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_Pedidos_UsuarioId" ON "Pedidos" ("UsuarioId");
+2025-10-03 13:04:28.136 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX "IX_Productos_Codigo" ON "Productos" ("Codigo");
+2025-10-03 13:04:28.147 -05:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX "IX_Roles_Nombre" ON "Roles" ("Nombre");
+2025-10-03 13:04:28.153 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_UsuarioRoles_RolId" ON "UsuarioRoles" ("RolId");
+2025-10-03 13:04:28.165 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX "IX_UsuarioRoles_UsuarioId_RolId" ON "UsuarioRoles" ("UsuarioId", "RolId");
+2025-10-03 13:04:28.172 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX "IX_Usuarios_Email" ON "Usuarios" ("Email");
+2025-10-03 13:04:28.241 -05:00 [INF] User profile is available. Using 'C:\Users\Usuario\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-10-03 13:04:28.356 -05:00 [INF] Creating key {a74a87ad-4f35-4c79-8461-91827eda778d} with creation date 2025-10-03 18:04:28Z, activation date 2025-10-03 18:04:28Z, and expiration date 2026-01-01 18:04:28Z.
+2025-10-03 13:04:28.382 -05:00 [INF] Writing data to file 'C:\Users\Usuario\AppData\Local\ASP.NET\DataProtection-Keys\key-a74a87ad-4f35-4c79-8461-91827eda778d.xml'.
+2025-10-03 13:04:28.524 -05:00 [WRN] The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert.
+2025-10-03 13:04:28.576 -05:00 [INF] Now listening on: https://localhost:5001
+2025-10-03 13:04:28.581 -05:00 [INF] Now listening on: http://localhost:5000
+2025-10-03 13:04:28.590 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-03 13:04:28.594 -05:00 [INF] Hosting environment: Development
+2025-10-03 13:04:28.597 -05:00 [INF] Content root path: C:\Users\Usuario\Documents\Prueba Dito\src\BackendAPI

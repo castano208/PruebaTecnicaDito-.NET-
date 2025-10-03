@@ -1,0 +1,939 @@
+2025-10-03 14:53:38.883 -05:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2025-10-03 14:53:38.985 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2025-10-03 14:53:39.159 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Activo", "p"."Cantidad", "p"."FechaCreacion", "p"."FechaModificacion", "p"."PedidoId", "p"."PrecioUnitario", "p"."ProductoId", "p"."Subtotal"
+FROM "PedidoItems" AS "p"
+2025-10-03 14:53:39.321 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "PedidoItems"
+WHERE "Id" = @p0
+RETURNING 1;
+2025-10-03 14:53:39.329 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "PedidoItems"
+WHERE "Id" = @p0
+RETURNING 1;
+2025-10-03 14:53:39.333 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "PedidoItems"
+WHERE "Id" = @p0
+RETURNING 1;
+2025-10-03 14:53:39.337 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "PedidoItems"
+WHERE "Id" = @p0
+RETURNING 1;
+2025-10-03 14:53:39.342 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "PedidoItems"
+WHERE "Id" = @p0
+RETURNING 1;
+2025-10-03 14:53:39.350 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "PedidoItems"
+WHERE "Id" = @p0
+RETURNING 1;
+2025-10-03 14:53:39.361 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "PedidoItems"
+WHERE "Id" = @p0
+RETURNING 1;
+2025-10-03 14:53:39.367 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "PedidoItems"
+WHERE "Id" = @p0
+RETURNING 1;
+2025-10-03 14:53:39.376 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "PedidoItems"
+WHERE "Id" = @p0
+RETURNING 1;
+2025-10-03 14:53:39.384 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "PedidoItems"
+WHERE "Id" = @p0
+RETURNING 1;
+2025-10-03 14:53:39.388 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "PedidoItems"
+WHERE "Id" = @p0
+RETURNING 1;
+2025-10-03 14:53:39.426 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Activo", "p"."Comentarios", "p"."DireccionEntrega", "p"."Estado", "p"."FechaCreacion", "p"."FechaModificacion", "p"."FechaPedido", "p"."NumeroPedido", "p"."Total", "p"."UsuarioId"
+FROM "Pedidos" AS "p"
+2025-10-03 14:53:39.478 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Pedidos"
+WHERE "Id" = @p0
+RETURNING 1;
+2025-10-03 14:53:39.482 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Pedidos"
+WHERE "Id" = @p0
+RETURNING 1;
+2025-10-03 14:53:39.487 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Pedidos"
+WHERE "Id" = @p0
+RETURNING 1;
+2025-10-03 14:53:39.491 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Pedidos"
+WHERE "Id" = @p0
+RETURNING 1;
+2025-10-03 14:53:39.517 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Activo", "u"."FechaCreacion", "u"."FechaModificacion", "u"."RolId", "u"."UsuarioId"
+FROM "UsuarioRoles" AS "u"
+2025-10-03 14:53:39.548 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "UsuarioRoles"
+WHERE "Id" = @p0
+RETURNING 1;
+2025-10-03 14:53:39.556 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "UsuarioRoles"
+WHERE "Id" = @p0
+RETURNING 1;
+2025-10-03 14:53:39.562 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "UsuarioRoles"
+WHERE "Id" = @p0
+RETURNING 1;
+2025-10-03 14:53:39.573 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "UsuarioRoles"
+WHERE "Id" = @p0
+RETURNING 1;
+2025-10-03 14:53:39.580 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "UsuarioRoles"
+WHERE "Id" = @p0
+RETURNING 1;
+2025-10-03 14:53:39.597 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Activo", "u"."Apellido", "u"."Direccion", "u"."Email", "u"."FechaCreacion", "u"."FechaModificacion", "u"."FechaNacimiento", "u"."Nombre", "u"."NumeroDocumento", "u"."PasswordHash", "u"."RefreshToken", "u"."RefreshTokenExpiryTime", "u"."Telefono", "u"."TipoDocumento"
+FROM "Usuarios" AS "u"
+2025-10-03 14:53:39.639 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Usuarios"
+WHERE "Id" = @p0
+RETURNING 1;
+2025-10-03 14:53:39.644 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Usuarios"
+WHERE "Id" = @p0
+RETURNING 1;
+2025-10-03 14:53:39.651 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Usuarios"
+WHERE "Id" = @p0
+RETURNING 1;
+2025-10-03 14:53:39.657 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Usuarios"
+WHERE "Id" = @p0
+RETURNING 1;
+2025-10-03 14:53:39.664 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Usuarios"
+WHERE "Id" = @p0
+RETURNING 1;
+2025-10-03 14:53:39.680 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Activo", "p"."Categoria", "p"."Codigo", "p"."Descripcion", "p"."FechaCreacion", "p"."FechaModificacion", "p"."ImagenUrl", "p"."Nombre", "p"."Precio", "p"."Stock"
+FROM "Productos" AS "p"
+2025-10-03 14:53:39.724 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Productos"
+WHERE "Id" = @p0
+RETURNING 1;
+2025-10-03 14:53:39.731 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Productos"
+WHERE "Id" = @p0
+RETURNING 1;
+2025-10-03 14:53:39.735 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Productos"
+WHERE "Id" = @p0
+RETURNING 1;
+2025-10-03 14:53:39.739 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Productos"
+WHERE "Id" = @p0
+RETURNING 1;
+2025-10-03 14:53:39.746 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Productos"
+WHERE "Id" = @p0
+RETURNING 1;
+2025-10-03 14:53:39.778 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Productos"
+WHERE "Id" = @p0
+RETURNING 1;
+2025-10-03 14:53:39.794 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Productos"
+WHERE "Id" = @p0
+RETURNING 1;
+2025-10-03 14:53:39.808 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Productos"
+WHERE "Id" = @p0
+RETURNING 1;
+2025-10-03 14:53:39.820 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Productos"
+WHERE "Id" = @p0
+RETURNING 1;
+2025-10-03 14:53:39.839 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Productos"
+WHERE "Id" = @p0
+RETURNING 1;
+2025-10-03 14:53:39.905 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "r"."Id", "r"."Activo", "r"."Descripcion", "r"."FechaCreacion", "r"."FechaModificacion", "r"."Nombre"
+FROM "Roles" AS "r"
+2025-10-03 14:53:39.951 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Roles"
+WHERE "Id" = @p0
+RETURNING 1;
+2025-10-03 14:53:39.956 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Roles"
+WHERE "Id" = @p0
+RETURNING 1;
+2025-10-03 14:53:39.962 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Roles"
+WHERE "Id" = @p0
+RETURNING 1;
+2025-10-03 14:53:41.180 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 12), @p2='?' (Size = 14), @p3='?' (Size = 77), @p4='?' (DbType = DateTime), @p5='?' (DbType = DateTime), @p6='?' (Size = 47), @p7='?' (Size = 23), @p8='?' (DbType = Decimal), @p9='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Productos" ("Id", "Categoria", "Codigo", "Descripcion", "FechaCreacion", "FechaModificacion", "ImagenUrl", "Nombre", "Precio", "Stock")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9)
+RETURNING "Activo";
+2025-10-03 14:53:41.211 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 12), @p2='?' (Size = 12), @p3='?' (Size = 77), @p4='?' (DbType = DateTime), @p5='?' (DbType = DateTime), @p6='?' (Size = 49), @p7='?' (Size = 29), @p8='?' (DbType = Decimal), @p9='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Productos" ("Id", "Categoria", "Codigo", "Descripcion", "FechaCreacion", "FechaModificacion", "ImagenUrl", "Nombre", "Precio", "Stock")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9)
+RETURNING "Activo";
+2025-10-03 14:53:41.230 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 7), @p2='?' (Size = 11), @p3='?' (Size = 83), @p4='?' (DbType = DateTime), @p5='?' (DbType = DateTime), @p6='?' (Size = 53), @p7='?' (Size = 25), @p8='?' (DbType = Decimal), @p9='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Productos" ("Id", "Categoria", "Codigo", "Descripcion", "FechaCreacion", "FechaModificacion", "ImagenUrl", "Nombre", "Precio", "Stock")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9)
+RETURNING "Activo";
+2025-10-03 14:53:41.242 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 7), @p2='?' (Size = 13), @p3='?' (Size = 73), @p4='?' (DbType = DateTime), @p5='?' (DbType = DateTime), @p6='?' (Size = 47), @p7='?' (Size = 28), @p8='?' (DbType = Decimal), @p9='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Productos" ("Id", "Categoria", "Codigo", "Descripcion", "FechaCreacion", "FechaModificacion", "ImagenUrl", "Nombre", "Precio", "Stock")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9)
+RETURNING "Activo";
+2025-10-03 14:53:41.256 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 12), @p2='?' (Size = 11), @p3='?' (Size = 74), @p4='?' (DbType = DateTime), @p5='?' (DbType = DateTime), @p6='?' (Size = 46), @p7='?' (Size = 23), @p8='?' (DbType = Decimal), @p9='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Productos" ("Id", "Categoria", "Codigo", "Descripcion", "FechaCreacion", "FechaModificacion", "ImagenUrl", "Nombre", "Precio", "Stock")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9)
+RETURNING "Activo";
+2025-10-03 14:53:41.266 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 10), @p2='?' (Size = 12), @p3='?' (Size = 76), @p4='?' (DbType = DateTime), @p5='?' (DbType = DateTime), @p6='?' (Size = 56), @p7='?' (Size = 25), @p8='?' (DbType = Decimal), @p9='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Productos" ("Id", "Categoria", "Codigo", "Descripcion", "FechaCreacion", "FechaModificacion", "ImagenUrl", "Nombre", "Precio", "Stock")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9)
+RETURNING "Activo";
+2025-10-03 14:53:41.276 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 10), @p2='?' (Size = 11), @p3='?' (Size = 71), @p4='?' (DbType = DateTime), @p5='?' (DbType = DateTime), @p6='?' (Size = 54), @p7='?' (Size = 27), @p8='?' (DbType = Decimal), @p9='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Productos" ("Id", "Categoria", "Codigo", "Descripcion", "FechaCreacion", "FechaModificacion", "ImagenUrl", "Nombre", "Precio", "Stock")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9)
+RETURNING "Activo";
+2025-10-03 14:53:41.286 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 7), @p2='?' (Size = 14), @p3='?' (Size = 69), @p4='?' (DbType = DateTime), @p5='?' (DbType = DateTime), @p6='?' (Size = 46), @p7='?' (Size = 25), @p8='?' (DbType = Decimal), @p9='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Productos" ("Id", "Categoria", "Codigo", "Descripcion", "FechaCreacion", "FechaModificacion", "ImagenUrl", "Nombre", "Precio", "Stock")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9)
+RETURNING "Activo";
+2025-10-03 14:53:41.295 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 5), @p2='?' (Size = 12), @p3='?' (Size = 64), @p4='?' (DbType = DateTime), @p5='?' (DbType = DateTime), @p6='?' (Size = 43), @p7='?' (Size = 21), @p8='?' (DbType = Decimal), @p9='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Productos" ("Id", "Categoria", "Codigo", "Descripcion", "FechaCreacion", "FechaModificacion", "ImagenUrl", "Nombre", "Precio", "Stock")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9)
+RETURNING "Activo";
+2025-10-03 14:53:41.303 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 14), @p2='?' (Size = 12), @p3='?' (Size = 66), @p4='?' (DbType = DateTime), @p5='?' (DbType = DateTime), @p6='?' (Size = 42), @p7='?' (Size = 30), @p8='?' (DbType = Decimal), @p9='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Productos" ("Id", "Categoria", "Codigo", "Descripcion", "FechaCreacion", "FechaModificacion", "ImagenUrl", "Nombre", "Precio", "Stock")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9)
+RETURNING "Activo";
+2025-10-03 14:53:41.310 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 25), @p2='?' (DbType = DateTime), @p3='?' (DbType = DateTime), @p4='?' (Size = 13)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Roles" ("Id", "Descripcion", "FechaCreacion", "FechaModificacion", "Nombre")
+VALUES (@p0, @p1, @p2, @p3, @p4)
+RETURNING "Activo";
+2025-10-03 14:53:41.320 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 16), @p2='?' (DbType = DateTime), @p3='?' (DbType = DateTime), @p4='?' (Size = 7)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Roles" ("Id", "Descripcion", "FechaCreacion", "FechaModificacion", "Nombre")
+VALUES (@p0, @p1, @p2, @p3, @p4)
+RETURNING "Activo";
+2025-10-03 14:53:41.326 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 21), @p2='?' (DbType = DateTime), @p3='?' (DbType = DateTime), @p4='?' (Size = 8)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Roles" ("Id", "Descripcion", "FechaCreacion", "FechaModificacion", "Nombre")
+VALUES (@p0, @p1, @p2, @p3, @p4)
+RETURNING "Activo";
+2025-10-03 14:53:41.336 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 13), @p2='?' (Size = 8), @p3='?' (Size = 24), @p4='?' (DbType = DateTime), @p5='?' (DbType = DateTime), @p6='?' (DbType = DateTime), @p7='?' (Size = 8), @p8='?' (Size = 10), @p9='?' (Size = 60), @p10='?', @p11='?' (DbType = DateTime), @p12='?' (Size = 10), @p13='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Usuarios" ("Id", "Apellido", "Direccion", "Email", "FechaCreacion", "FechaModificacion", "FechaNacimiento", "Nombre", "NumeroDocumento", "PasswordHash", "RefreshToken", "RefreshTokenExpiryTime", "Telefono", "TipoDocumento")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13)
+RETURNING "Activo";
+2025-10-03 14:53:41.345 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 6), @p2='?' (Size = 27), @p3='?' (Size = 17), @p4='?' (DbType = DateTime), @p5='?' (DbType = DateTime), @p6='?' (DbType = DateTime), @p7='?' (Size = 11), @p8='?' (Size = 8), @p9='?' (Size = 60), @p10='?', @p11='?' (DbType = DateTime), @p12='?' (Size = 10), @p13='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Usuarios" ("Id", "Apellido", "Direccion", "Email", "FechaCreacion", "FechaModificacion", "FechaNacimiento", "Nombre", "NumeroDocumento", "PasswordHash", "RefreshToken", "RefreshTokenExpiryTime", "Telefono", "TipoDocumento")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13)
+RETURNING "Activo";
+2025-10-03 14:53:41.352 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 9), @p2='?' (Size = 22), @p3='?' (Size = 18), @p4='?' (DbType = DateTime), @p5='?' (DbType = DateTime), @p6='?' (DbType = DateTime), @p7='?' (Size = 14), @p8='?' (Size = 8), @p9='?' (Size = 60), @p10='?', @p11='?' (DbType = DateTime), @p12='?' (Size = 10), @p13='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Usuarios" ("Id", "Apellido", "Direccion", "Email", "FechaCreacion", "FechaModificacion", "FechaNacimiento", "Nombre", "NumeroDocumento", "PasswordHash", "RefreshToken", "RefreshTokenExpiryTime", "Telefono", "TipoDocumento")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13)
+RETURNING "Activo";
+2025-10-03 14:53:41.360 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 8), @p2='?' (Size = 29), @p3='?' (Size = 15), @p4='?' (DbType = DateTime), @p5='?' (DbType = DateTime), @p6='?' (DbType = DateTime), @p7='?' (Size = 9), @p8='?' (Size = 8), @p9='?' (Size = 60), @p10='?', @p11='?' (DbType = DateTime), @p12='?' (Size = 10), @p13='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Usuarios" ("Id", "Apellido", "Direccion", "Email", "FechaCreacion", "FechaModificacion", "FechaNacimiento", "Nombre", "NumeroDocumento", "PasswordHash", "RefreshToken", "RefreshTokenExpiryTime", "Telefono", "TipoDocumento")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13)
+RETURNING "Activo";
+2025-10-03 14:53:41.369 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 5), @p2='?' (Size = 29), @p3='?' (Size = 17), @p4='?' (DbType = DateTime), @p5='?' (DbType = DateTime), @p6='?' (DbType = DateTime), @p7='?' (Size = 10), @p8='?' (Size = 8), @p9='?' (Size = 60), @p10='?', @p11='?' (DbType = DateTime), @p12='?' (Size = 10), @p13='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Usuarios" ("Id", "Apellido", "Direccion", "Email", "FechaCreacion", "FechaModificacion", "FechaNacimiento", "Nombre", "NumeroDocumento", "PasswordHash", "RefreshToken", "RefreshTokenExpiryTime", "Telefono", "TipoDocumento")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13)
+RETURNING "Activo";
+2025-10-03 14:53:41.374 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 25), @p2='?' (Size = 27), @p3='?' (Size = 10), @p4='?' (DbType = DateTime), @p5='?' (DbType = DateTime), @p6='?' (DbType = DateTime), @p7='?' (Size = 12), @p8='?' (DbType = Decimal), @p9='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Pedidos" ("Id", "Comentarios", "DireccionEntrega", "Estado", "FechaCreacion", "FechaModificacion", "FechaPedido", "NumeroPedido", "Total", "UsuarioId")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9)
+RETURNING "Activo";
+2025-10-03 14:53:41.384 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 33), @p2='?' (Size = 29), @p3='?' (Size = 10), @p4='?' (DbType = DateTime), @p5='?' (DbType = DateTime), @p6='?' (DbType = DateTime), @p7='?' (Size = 12), @p8='?' (DbType = Decimal), @p9='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Pedidos" ("Id", "Comentarios", "DireccionEntrega", "Estado", "FechaCreacion", "FechaModificacion", "FechaPedido", "NumeroPedido", "Total", "UsuarioId")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9)
+RETURNING "Activo";
+2025-10-03 14:53:41.388 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 20), @p2='?' (Size = 27), @p3='?' (Size = 9), @p4='?' (DbType = DateTime), @p5='?' (DbType = DateTime), @p6='?' (DbType = DateTime), @p7='?' (Size = 12), @p8='?' (DbType = Decimal), @p9='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Pedidos" ("Id", "Comentarios", "DireccionEntrega", "Estado", "FechaCreacion", "FechaModificacion", "FechaPedido", "NumeroPedido", "Total", "UsuarioId")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9)
+RETURNING "Activo";
+2025-10-03 14:53:41.397 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = DateTime), @p2='?' (DbType = DateTime), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "UsuarioRoles" ("Id", "FechaCreacion", "FechaModificacion", "RolId", "UsuarioId")
+VALUES (@p0, @p1, @p2, @p3, @p4)
+RETURNING "Activo";
+2025-10-03 14:53:41.403 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = DateTime), @p2='?' (DbType = DateTime), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "UsuarioRoles" ("Id", "FechaCreacion", "FechaModificacion", "RolId", "UsuarioId")
+VALUES (@p0, @p1, @p2, @p3, @p4)
+RETURNING "Activo";
+2025-10-03 14:53:41.409 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = DateTime), @p2='?' (DbType = DateTime), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "UsuarioRoles" ("Id", "FechaCreacion", "FechaModificacion", "RolId", "UsuarioId")
+VALUES (@p0, @p1, @p2, @p3, @p4)
+RETURNING "Activo";
+2025-10-03 14:53:41.417 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = DateTime), @p2='?' (DbType = DateTime), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "UsuarioRoles" ("Id", "FechaCreacion", "FechaModificacion", "RolId", "UsuarioId")
+VALUES (@p0, @p1, @p2, @p3, @p4)
+RETURNING "Activo";
+2025-10-03 14:53:41.423 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = DateTime), @p2='?' (DbType = DateTime), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "UsuarioRoles" ("Id", "FechaCreacion", "FechaModificacion", "RolId", "UsuarioId")
+VALUES (@p0, @p1, @p2, @p3, @p4)
+RETURNING "Activo";
+2025-10-03 14:53:41.430 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = DateTime), @p3='?' (DbType = DateTime), @p4='?' (DbType = Int32), @p5='?' (DbType = Decimal), @p6='?' (DbType = Int32), @p7='?' (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "PedidoItems" ("Id", "Cantidad", "FechaCreacion", "FechaModificacion", "PedidoId", "PrecioUnitario", "ProductoId", "Subtotal")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7)
+RETURNING "Activo";
+2025-10-03 14:53:41.438 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = DateTime), @p3='?' (DbType = DateTime), @p4='?' (DbType = Int32), @p5='?' (DbType = Decimal), @p6='?' (DbType = Int32), @p7='?' (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "PedidoItems" ("Id", "Cantidad", "FechaCreacion", "FechaModificacion", "PedidoId", "PrecioUnitario", "ProductoId", "Subtotal")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7)
+RETURNING "Activo";
+2025-10-03 14:53:41.443 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = DateTime), @p3='?' (DbType = DateTime), @p4='?' (DbType = Int32), @p5='?' (DbType = Decimal), @p6='?' (DbType = Int32), @p7='?' (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "PedidoItems" ("Id", "Cantidad", "FechaCreacion", "FechaModificacion", "PedidoId", "PrecioUnitario", "ProductoId", "Subtotal")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7)
+RETURNING "Activo";
+2025-10-03 14:53:41.451 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = DateTime), @p3='?' (DbType = DateTime), @p4='?' (DbType = Int32), @p5='?' (DbType = Decimal), @p6='?' (DbType = Int32), @p7='?' (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "PedidoItems" ("Id", "Cantidad", "FechaCreacion", "FechaModificacion", "PedidoId", "PrecioUnitario", "ProductoId", "Subtotal")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7)
+RETURNING "Activo";
+2025-10-03 14:53:41.457 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = DateTime), @p3='?' (DbType = DateTime), @p4='?' (DbType = Int32), @p5='?' (DbType = Decimal), @p6='?' (DbType = Int32), @p7='?' (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "PedidoItems" ("Id", "Cantidad", "FechaCreacion", "FechaModificacion", "PedidoId", "PrecioUnitario", "ProductoId", "Subtotal")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7)
+RETURNING "Activo";
+2025-10-03 14:53:41.466 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = DateTime), @p3='?' (DbType = DateTime), @p4='?' (DbType = Int32), @p5='?' (DbType = Decimal), @p6='?' (DbType = Int32), @p7='?' (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "PedidoItems" ("Id", "Cantidad", "FechaCreacion", "FechaModificacion", "PedidoId", "PrecioUnitario", "ProductoId", "Subtotal")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7)
+RETURNING "Activo";
+2025-10-03 14:53:41.472 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = DateTime), @p3='?' (DbType = DateTime), @p4='?' (DbType = Int32), @p5='?' (DbType = Decimal), @p6='?' (DbType = Int32), @p7='?' (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "PedidoItems" ("Id", "Cantidad", "FechaCreacion", "FechaModificacion", "PedidoId", "PrecioUnitario", "ProductoId", "Subtotal")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7)
+RETURNING "Activo";
+2025-10-03 14:53:41.479 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = DateTime), @p3='?' (DbType = DateTime), @p4='?' (DbType = Int32), @p5='?' (DbType = Decimal), @p6='?' (DbType = Int32), @p7='?' (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "PedidoItems" ("Id", "Cantidad", "FechaCreacion", "FechaModificacion", "PedidoId", "PrecioUnitario", "ProductoId", "Subtotal")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7)
+RETURNING "Activo";
+2025-10-03 14:53:41.485 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = DateTime), @p3='?' (DbType = DateTime), @p4='?' (DbType = Int32), @p5='?' (DbType = Decimal), @p6='?' (DbType = Int32), @p7='?' (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "PedidoItems" ("Id", "Cantidad", "FechaCreacion", "FechaModificacion", "PedidoId", "PrecioUnitario", "ProductoId", "Subtotal")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7)
+RETURNING "Activo";
+2025-10-03 14:53:41.526 -05:00 [INF] User profile is available. Using 'C:\Users\Usuario\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-10-03 14:53:41.594 -05:00 [WRN] The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert.
+2025-10-03 14:53:41.623 -05:00 [INF] Now listening on: https://localhost:54254
+2025-10-03 14:53:41.627 -05:00 [INF] Now listening on: http://localhost:54255
+2025-10-03 14:53:41.630 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-03 14:53:41.634 -05:00 [INF] Hosting environment: Development
+2025-10-03 14:53:41.636 -05:00 [INF] Content root path: C:\Users\Usuario\Documents\Prueba Dito\src\BackendAPI
+2025-10-03 14:54:14.078 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:54254/swagg - application/json 76
+2025-10-03 14:54:14.397 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:54254/swagg - 404 0 null 319.922ms
+2025-10-03 14:54:14.422 -05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:54254/swagg, Response status code: 404
+2025-10-03 14:54:19.390 -05:00 [INF] Request starting HTTP/1.1 POST https://localhost:54254/swagg - application/json 76
+2025-10-03 14:54:19.413 -05:00 [INF] Request finished HTTP/1.1 POST https://localhost:54254/swagg - 404 0 null 23.1667ms
+2025-10-03 14:54:19.438 -05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST https://localhost:54254/swagg, Response status code: 404
+2025-10-03 14:56:25.918 -05:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2025-10-03 14:56:26.037 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2025-10-03 14:56:26.270 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Activo", "p"."Cantidad", "p"."FechaCreacion", "p"."FechaModificacion", "p"."PedidoId", "p"."PrecioUnitario", "p"."ProductoId", "p"."Subtotal"
+FROM "PedidoItems" AS "p"
+2025-10-03 14:56:26.440 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "PedidoItems"
+WHERE "Id" = @p0
+RETURNING 1;
+2025-10-03 14:56:26.450 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "PedidoItems"
+WHERE "Id" = @p0
+RETURNING 1;
+2025-10-03 14:56:26.457 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "PedidoItems"
+WHERE "Id" = @p0
+RETURNING 1;
+2025-10-03 14:56:26.466 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "PedidoItems"
+WHERE "Id" = @p0
+RETURNING 1;
+2025-10-03 14:56:26.475 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "PedidoItems"
+WHERE "Id" = @p0
+RETURNING 1;
+2025-10-03 14:56:26.482 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "PedidoItems"
+WHERE "Id" = @p0
+RETURNING 1;
+2025-10-03 14:56:26.493 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "PedidoItems"
+WHERE "Id" = @p0
+RETURNING 1;
+2025-10-03 14:56:26.500 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "PedidoItems"
+WHERE "Id" = @p0
+RETURNING 1;
+2025-10-03 14:56:26.506 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "PedidoItems"
+WHERE "Id" = @p0
+RETURNING 1;
+2025-10-03 14:56:26.542 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Activo", "p"."Comentarios", "p"."DireccionEntrega", "p"."Estado", "p"."FechaCreacion", "p"."FechaModificacion", "p"."FechaPedido", "p"."NumeroPedido", "p"."Total", "p"."UsuarioId"
+FROM "Pedidos" AS "p"
+2025-10-03 14:56:26.608 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Pedidos"
+WHERE "Id" = @p0
+RETURNING 1;
+2025-10-03 14:56:26.619 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Pedidos"
+WHERE "Id" = @p0
+RETURNING 1;
+2025-10-03 14:56:26.624 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Pedidos"
+WHERE "Id" = @p0
+RETURNING 1;
+2025-10-03 14:56:26.635 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Activo", "u"."FechaCreacion", "u"."FechaModificacion", "u"."RolId", "u"."UsuarioId"
+FROM "UsuarioRoles" AS "u"
+2025-10-03 14:56:26.672 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "UsuarioRoles"
+WHERE "Id" = @p0
+RETURNING 1;
+2025-10-03 14:56:26.682 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "UsuarioRoles"
+WHERE "Id" = @p0
+RETURNING 1;
+2025-10-03 14:56:26.693 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "UsuarioRoles"
+WHERE "Id" = @p0
+RETURNING 1;
+2025-10-03 14:56:26.699 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "UsuarioRoles"
+WHERE "Id" = @p0
+RETURNING 1;
+2025-10-03 14:56:26.704 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "UsuarioRoles"
+WHERE "Id" = @p0
+RETURNING 1;
+2025-10-03 14:56:26.723 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Activo", "u"."Apellido", "u"."Direccion", "u"."Email", "u"."FechaCreacion", "u"."FechaModificacion", "u"."FechaNacimiento", "u"."Nombre", "u"."NumeroDocumento", "u"."PasswordHash", "u"."RefreshToken", "u"."RefreshTokenExpiryTime", "u"."Telefono", "u"."TipoDocumento"
+FROM "Usuarios" AS "u"
+2025-10-03 14:56:26.772 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Usuarios"
+WHERE "Id" = @p0
+RETURNING 1;
+2025-10-03 14:56:26.785 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Usuarios"
+WHERE "Id" = @p0
+RETURNING 1;
+2025-10-03 14:56:26.796 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Usuarios"
+WHERE "Id" = @p0
+RETURNING 1;
+2025-10-03 14:56:26.807 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Usuarios"
+WHERE "Id" = @p0
+RETURNING 1;
+2025-10-03 14:56:26.819 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Usuarios"
+WHERE "Id" = @p0
+RETURNING 1;
+2025-10-03 14:56:26.837 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Activo", "p"."Categoria", "p"."Codigo", "p"."Descripcion", "p"."FechaCreacion", "p"."FechaModificacion", "p"."ImagenUrl", "p"."Nombre", "p"."Precio", "p"."Stock"
+FROM "Productos" AS "p"
+2025-10-03 14:56:26.873 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Productos"
+WHERE "Id" = @p0
+RETURNING 1;
+2025-10-03 14:56:26.884 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Productos"
+WHERE "Id" = @p0
+RETURNING 1;
+2025-10-03 14:56:26.892 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Productos"
+WHERE "Id" = @p0
+RETURNING 1;
+2025-10-03 14:56:26.899 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Productos"
+WHERE "Id" = @p0
+RETURNING 1;
+2025-10-03 14:56:26.904 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Productos"
+WHERE "Id" = @p0
+RETURNING 1;
+2025-10-03 14:56:26.913 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Productos"
+WHERE "Id" = @p0
+RETURNING 1;
+2025-10-03 14:56:26.924 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Productos"
+WHERE "Id" = @p0
+RETURNING 1;
+2025-10-03 14:56:26.931 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Productos"
+WHERE "Id" = @p0
+RETURNING 1;
+2025-10-03 14:56:26.941 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Productos"
+WHERE "Id" = @p0
+RETURNING 1;
+2025-10-03 14:56:26.947 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Productos"
+WHERE "Id" = @p0
+RETURNING 1;
+2025-10-03 14:56:26.958 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "r"."Id", "r"."Activo", "r"."Descripcion", "r"."FechaCreacion", "r"."FechaModificacion", "r"."Nombre"
+FROM "Roles" AS "r"
+2025-10-03 14:56:26.978 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Roles"
+WHERE "Id" = @p0
+RETURNING 1;
+2025-10-03 14:56:26.988 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Roles"
+WHERE "Id" = @p0
+RETURNING 1;
+2025-10-03 14:56:26.993 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Roles"
+WHERE "Id" = @p0
+RETURNING 1;
+2025-10-03 14:56:28.053 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 12), @p2='?' (Size = 14), @p3='?' (Size = 77), @p4='?' (DbType = DateTime), @p5='?' (DbType = DateTime), @p6='?' (Size = 47), @p7='?' (Size = 23), @p8='?' (DbType = Decimal), @p9='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Productos" ("Id", "Categoria", "Codigo", "Descripcion", "FechaCreacion", "FechaModificacion", "ImagenUrl", "Nombre", "Precio", "Stock")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9)
+RETURNING "Activo";
+2025-10-03 14:56:28.074 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 12), @p2='?' (Size = 12), @p3='?' (Size = 77), @p4='?' (DbType = DateTime), @p5='?' (DbType = DateTime), @p6='?' (Size = 49), @p7='?' (Size = 29), @p8='?' (DbType = Decimal), @p9='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Productos" ("Id", "Categoria", "Codigo", "Descripcion", "FechaCreacion", "FechaModificacion", "ImagenUrl", "Nombre", "Precio", "Stock")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9)
+RETURNING "Activo";
+2025-10-03 14:56:28.104 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 7), @p2='?' (Size = 11), @p3='?' (Size = 83), @p4='?' (DbType = DateTime), @p5='?' (DbType = DateTime), @p6='?' (Size = 53), @p7='?' (Size = 25), @p8='?' (DbType = Decimal), @p9='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Productos" ("Id", "Categoria", "Codigo", "Descripcion", "FechaCreacion", "FechaModificacion", "ImagenUrl", "Nombre", "Precio", "Stock")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9)
+RETURNING "Activo";
+2025-10-03 14:56:28.127 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 7), @p2='?' (Size = 13), @p3='?' (Size = 73), @p4='?' (DbType = DateTime), @p5='?' (DbType = DateTime), @p6='?' (Size = 47), @p7='?' (Size = 28), @p8='?' (DbType = Decimal), @p9='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Productos" ("Id", "Categoria", "Codigo", "Descripcion", "FechaCreacion", "FechaModificacion", "ImagenUrl", "Nombre", "Precio", "Stock")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9)
+RETURNING "Activo";
+2025-10-03 14:56:28.143 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 12), @p2='?' (Size = 11), @p3='?' (Size = 74), @p4='?' (DbType = DateTime), @p5='?' (DbType = DateTime), @p6='?' (Size = 46), @p7='?' (Size = 23), @p8='?' (DbType = Decimal), @p9='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Productos" ("Id", "Categoria", "Codigo", "Descripcion", "FechaCreacion", "FechaModificacion", "ImagenUrl", "Nombre", "Precio", "Stock")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9)
+RETURNING "Activo";
+2025-10-03 14:56:28.155 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 10), @p2='?' (Size = 12), @p3='?' (Size = 76), @p4='?' (DbType = DateTime), @p5='?' (DbType = DateTime), @p6='?' (Size = 56), @p7='?' (Size = 25), @p8='?' (DbType = Decimal), @p9='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Productos" ("Id", "Categoria", "Codigo", "Descripcion", "FechaCreacion", "FechaModificacion", "ImagenUrl", "Nombre", "Precio", "Stock")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9)
+RETURNING "Activo";
+2025-10-03 14:56:28.160 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 10), @p2='?' (Size = 11), @p3='?' (Size = 71), @p4='?' (DbType = DateTime), @p5='?' (DbType = DateTime), @p6='?' (Size = 54), @p7='?' (Size = 27), @p8='?' (DbType = Decimal), @p9='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Productos" ("Id", "Categoria", "Codigo", "Descripcion", "FechaCreacion", "FechaModificacion", "ImagenUrl", "Nombre", "Precio", "Stock")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9)
+RETURNING "Activo";
+2025-10-03 14:56:28.170 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 7), @p2='?' (Size = 14), @p3='?' (Size = 69), @p4='?' (DbType = DateTime), @p5='?' (DbType = DateTime), @p6='?' (Size = 46), @p7='?' (Size = 25), @p8='?' (DbType = Decimal), @p9='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Productos" ("Id", "Categoria", "Codigo", "Descripcion", "FechaCreacion", "FechaModificacion", "ImagenUrl", "Nombre", "Precio", "Stock")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9)
+RETURNING "Activo";
+2025-10-03 14:56:28.175 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 5), @p2='?' (Size = 12), @p3='?' (Size = 64), @p4='?' (DbType = DateTime), @p5='?' (DbType = DateTime), @p6='?' (Size = 43), @p7='?' (Size = 21), @p8='?' (DbType = Decimal), @p9='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Productos" ("Id", "Categoria", "Codigo", "Descripcion", "FechaCreacion", "FechaModificacion", "ImagenUrl", "Nombre", "Precio", "Stock")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9)
+RETURNING "Activo";
+2025-10-03 14:56:28.185 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 14), @p2='?' (Size = 12), @p3='?' (Size = 66), @p4='?' (DbType = DateTime), @p5='?' (DbType = DateTime), @p6='?' (Size = 42), @p7='?' (Size = 30), @p8='?' (DbType = Decimal), @p9='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Productos" ("Id", "Categoria", "Codigo", "Descripcion", "FechaCreacion", "FechaModificacion", "ImagenUrl", "Nombre", "Precio", "Stock")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9)
+RETURNING "Activo";
+2025-10-03 14:56:28.190 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 25), @p2='?' (DbType = DateTime), @p3='?' (DbType = DateTime), @p4='?' (Size = 13)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Roles" ("Id", "Descripcion", "FechaCreacion", "FechaModificacion", "Nombre")
+VALUES (@p0, @p1, @p2, @p3, @p4)
+RETURNING "Activo";
+2025-10-03 14:56:28.201 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 16), @p2='?' (DbType = DateTime), @p3='?' (DbType = DateTime), @p4='?' (Size = 7)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Roles" ("Id", "Descripcion", "FechaCreacion", "FechaModificacion", "Nombre")
+VALUES (@p0, @p1, @p2, @p3, @p4)
+RETURNING "Activo";
+2025-10-03 14:56:28.210 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 21), @p2='?' (DbType = DateTime), @p3='?' (DbType = DateTime), @p4='?' (Size = 8)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Roles" ("Id", "Descripcion", "FechaCreacion", "FechaModificacion", "Nombre")
+VALUES (@p0, @p1, @p2, @p3, @p4)
+RETURNING "Activo";
+2025-10-03 14:56:28.226 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 13), @p2='?' (Size = 8), @p3='?' (Size = 24), @p4='?' (DbType = DateTime), @p5='?' (DbType = DateTime), @p6='?' (DbType = DateTime), @p7='?' (Size = 8), @p8='?' (Size = 10), @p9='?' (Size = 60), @p10='?', @p11='?' (DbType = DateTime), @p12='?' (Size = 10), @p13='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Usuarios" ("Id", "Apellido", "Direccion", "Email", "FechaCreacion", "FechaModificacion", "FechaNacimiento", "Nombre", "NumeroDocumento", "PasswordHash", "RefreshToken", "RefreshTokenExpiryTime", "Telefono", "TipoDocumento")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13)
+RETURNING "Activo";
+2025-10-03 14:56:28.232 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 6), @p2='?' (Size = 27), @p3='?' (Size = 17), @p4='?' (DbType = DateTime), @p5='?' (DbType = DateTime), @p6='?' (DbType = DateTime), @p7='?' (Size = 11), @p8='?' (Size = 8), @p9='?' (Size = 60), @p10='?', @p11='?' (DbType = DateTime), @p12='?' (Size = 10), @p13='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Usuarios" ("Id", "Apellido", "Direccion", "Email", "FechaCreacion", "FechaModificacion", "FechaNacimiento", "Nombre", "NumeroDocumento", "PasswordHash", "RefreshToken", "RefreshTokenExpiryTime", "Telefono", "TipoDocumento")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13)
+RETURNING "Activo";
+2025-10-03 14:56:28.238 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 9), @p2='?' (Size = 22), @p3='?' (Size = 18), @p4='?' (DbType = DateTime), @p5='?' (DbType = DateTime), @p6='?' (DbType = DateTime), @p7='?' (Size = 14), @p8='?' (Size = 8), @p9='?' (Size = 60), @p10='?', @p11='?' (DbType = DateTime), @p12='?' (Size = 10), @p13='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Usuarios" ("Id", "Apellido", "Direccion", "Email", "FechaCreacion", "FechaModificacion", "FechaNacimiento", "Nombre", "NumeroDocumento", "PasswordHash", "RefreshToken", "RefreshTokenExpiryTime", "Telefono", "TipoDocumento")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13)
+RETURNING "Activo";
+2025-10-03 14:56:28.247 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 8), @p2='?' (Size = 29), @p3='?' (Size = 15), @p4='?' (DbType = DateTime), @p5='?' (DbType = DateTime), @p6='?' (DbType = DateTime), @p7='?' (Size = 9), @p8='?' (Size = 8), @p9='?' (Size = 60), @p10='?', @p11='?' (DbType = DateTime), @p12='?' (Size = 10), @p13='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Usuarios" ("Id", "Apellido", "Direccion", "Email", "FechaCreacion", "FechaModificacion", "FechaNacimiento", "Nombre", "NumeroDocumento", "PasswordHash", "RefreshToken", "RefreshTokenExpiryTime", "Telefono", "TipoDocumento")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13)
+RETURNING "Activo";
+2025-10-03 14:56:28.251 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 5), @p2='?' (Size = 29), @p3='?' (Size = 17), @p4='?' (DbType = DateTime), @p5='?' (DbType = DateTime), @p6='?' (DbType = DateTime), @p7='?' (Size = 10), @p8='?' (Size = 8), @p9='?' (Size = 60), @p10='?', @p11='?' (DbType = DateTime), @p12='?' (Size = 10), @p13='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Usuarios" ("Id", "Apellido", "Direccion", "Email", "FechaCreacion", "FechaModificacion", "FechaNacimiento", "Nombre", "NumeroDocumento", "PasswordHash", "RefreshToken", "RefreshTokenExpiryTime", "Telefono", "TipoDocumento")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13)
+RETURNING "Activo";
+2025-10-03 14:56:28.259 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 25), @p2='?' (Size = 27), @p3='?' (Size = 10), @p4='?' (DbType = DateTime), @p5='?' (DbType = DateTime), @p6='?' (DbType = DateTime), @p7='?' (Size = 12), @p8='?' (DbType = Decimal), @p9='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Pedidos" ("Id", "Comentarios", "DireccionEntrega", "Estado", "FechaCreacion", "FechaModificacion", "FechaPedido", "NumeroPedido", "Total", "UsuarioId")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9)
+RETURNING "Activo";
+2025-10-03 14:56:28.268 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 33), @p2='?' (Size = 29), @p3='?' (Size = 10), @p4='?' (DbType = DateTime), @p5='?' (DbType = DateTime), @p6='?' (DbType = DateTime), @p7='?' (Size = 12), @p8='?' (DbType = Decimal), @p9='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Pedidos" ("Id", "Comentarios", "DireccionEntrega", "Estado", "FechaCreacion", "FechaModificacion", "FechaPedido", "NumeroPedido", "Total", "UsuarioId")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9)
+RETURNING "Activo";
+2025-10-03 14:56:28.278 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 20), @p2='?' (Size = 27), @p3='?' (Size = 9), @p4='?' (DbType = DateTime), @p5='?' (DbType = DateTime), @p6='?' (DbType = DateTime), @p7='?' (Size = 12), @p8='?' (DbType = Decimal), @p9='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Pedidos" ("Id", "Comentarios", "DireccionEntrega", "Estado", "FechaCreacion", "FechaModificacion", "FechaPedido", "NumeroPedido", "Total", "UsuarioId")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9)
+RETURNING "Activo";
+2025-10-03 14:56:28.295 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = DateTime), @p2='?' (DbType = DateTime), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "UsuarioRoles" ("Id", "FechaCreacion", "FechaModificacion", "RolId", "UsuarioId")
+VALUES (@p0, @p1, @p2, @p3, @p4)
+RETURNING "Activo";
+2025-10-03 14:56:28.307 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = DateTime), @p2='?' (DbType = DateTime), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "UsuarioRoles" ("Id", "FechaCreacion", "FechaModificacion", "RolId", "UsuarioId")
+VALUES (@p0, @p1, @p2, @p3, @p4)
+RETURNING "Activo";
+2025-10-03 14:56:28.312 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = DateTime), @p2='?' (DbType = DateTime), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "UsuarioRoles" ("Id", "FechaCreacion", "FechaModificacion", "RolId", "UsuarioId")
+VALUES (@p0, @p1, @p2, @p3, @p4)
+RETURNING "Activo";
+2025-10-03 14:56:28.322 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = DateTime), @p2='?' (DbType = DateTime), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "UsuarioRoles" ("Id", "FechaCreacion", "FechaModificacion", "RolId", "UsuarioId")
+VALUES (@p0, @p1, @p2, @p3, @p4)
+RETURNING "Activo";
+2025-10-03 14:56:28.327 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = DateTime), @p2='?' (DbType = DateTime), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "UsuarioRoles" ("Id", "FechaCreacion", "FechaModificacion", "RolId", "UsuarioId")
+VALUES (@p0, @p1, @p2, @p3, @p4)
+RETURNING "Activo";
+2025-10-03 14:56:28.332 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = DateTime), @p3='?' (DbType = DateTime), @p4='?' (DbType = Int32), @p5='?' (DbType = Decimal), @p6='?' (DbType = Int32), @p7='?' (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "PedidoItems" ("Id", "Cantidad", "FechaCreacion", "FechaModificacion", "PedidoId", "PrecioUnitario", "ProductoId", "Subtotal")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7)
+RETURNING "Activo";
+2025-10-03 14:56:28.342 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = DateTime), @p3='?' (DbType = DateTime), @p4='?' (DbType = Int32), @p5='?' (DbType = Decimal), @p6='?' (DbType = Int32), @p7='?' (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "PedidoItems" ("Id", "Cantidad", "FechaCreacion", "FechaModificacion", "PedidoId", "PrecioUnitario", "ProductoId", "Subtotal")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7)
+RETURNING "Activo";
+2025-10-03 14:56:28.347 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = DateTime), @p3='?' (DbType = DateTime), @p4='?' (DbType = Int32), @p5='?' (DbType = Decimal), @p6='?' (DbType = Int32), @p7='?' (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "PedidoItems" ("Id", "Cantidad", "FechaCreacion", "FechaModificacion", "PedidoId", "PrecioUnitario", "ProductoId", "Subtotal")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7)
+RETURNING "Activo";
+2025-10-03 14:56:28.356 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = DateTime), @p3='?' (DbType = DateTime), @p4='?' (DbType = Int32), @p5='?' (DbType = Decimal), @p6='?' (DbType = Int32), @p7='?' (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "PedidoItems" ("Id", "Cantidad", "FechaCreacion", "FechaModificacion", "PedidoId", "PrecioUnitario", "ProductoId", "Subtotal")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7)
+RETURNING "Activo";
+2025-10-03 14:56:28.362 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = DateTime), @p3='?' (DbType = DateTime), @p4='?' (DbType = Int32), @p5='?' (DbType = Decimal), @p6='?' (DbType = Int32), @p7='?' (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "PedidoItems" ("Id", "Cantidad", "FechaCreacion", "FechaModificacion", "PedidoId", "PrecioUnitario", "ProductoId", "Subtotal")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7)
+RETURNING "Activo";
+2025-10-03 14:56:28.366 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = DateTime), @p3='?' (DbType = DateTime), @p4='?' (DbType = Int32), @p5='?' (DbType = Decimal), @p6='?' (DbType = Int32), @p7='?' (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "PedidoItems" ("Id", "Cantidad", "FechaCreacion", "FechaModificacion", "PedidoId", "PrecioUnitario", "ProductoId", "Subtotal")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7)
+RETURNING "Activo";
+2025-10-03 14:56:28.377 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = DateTime), @p3='?' (DbType = DateTime), @p4='?' (DbType = Int32), @p5='?' (DbType = Decimal), @p6='?' (DbType = Int32), @p7='?' (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "PedidoItems" ("Id", "Cantidad", "FechaCreacion", "FechaModificacion", "PedidoId", "PrecioUnitario", "ProductoId", "Subtotal")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7)
+RETURNING "Activo";
+2025-10-03 14:56:28.383 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = DateTime), @p3='?' (DbType = DateTime), @p4='?' (DbType = Int32), @p5='?' (DbType = Decimal), @p6='?' (DbType = Int32), @p7='?' (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "PedidoItems" ("Id", "Cantidad", "FechaCreacion", "FechaModificacion", "PedidoId", "PrecioUnitario", "ProductoId", "Subtotal")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7)
+RETURNING "Activo";
+2025-10-03 14:56:28.389 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = DateTime), @p3='?' (DbType = DateTime), @p4='?' (DbType = Int32), @p5='?' (DbType = Decimal), @p6='?' (DbType = Int32), @p7='?' (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "PedidoItems" ("Id", "Cantidad", "FechaCreacion", "FechaModificacion", "PedidoId", "PrecioUnitario", "ProductoId", "Subtotal")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7)
+RETURNING "Activo";
+2025-10-03 14:56:28.434 -05:00 [INF] User profile is available. Using 'C:\Users\Usuario\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-10-03 14:56:28.521 -05:00 [WRN] The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert.
+2025-10-03 14:56:28.552 -05:00 [INF] Now listening on: https://localhost:54254
+2025-10-03 14:56:28.556 -05:00 [INF] Now listening on: http://localhost:54255
+2025-10-03 14:56:28.559 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-03 14:56:28.562 -05:00 [INF] Hosting environment: Development
+2025-10-03 14:56:28.566 -05:00 [INF] Content root path: C:\Users\Usuario\Documents\Prueba Dito\src\BackendAPI
+2025-10-03 14:56:56.374 -05:00 [INF] Request starting HTTP/1.1 POST https://localhost:54254/api/auth/login - application/json 75
+2025-10-03 14:56:56.607 -05:00 [INF] Executing endpoint 'BackendAPI.Controllers.AuthController.Login (BackendAPI)'
+2025-10-03 14:56:56.656 -05:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BackendAPI.Domain.DTOs.AuthResponseDto]] Login(BackendAPI.Domain.DTOs.LoginDto) on controller BackendAPI.Controllers.AuthController (BackendAPI).
+2025-10-03 14:56:57.145 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__email_0='?' (Size = 24)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Activo", "u"."Apellido", "u"."Direccion", "u"."Email", "u"."FechaCreacion", "u"."FechaModificacion", "u"."FechaNacimiento", "u"."Nombre", "u"."NumeroDocumento", "u"."PasswordHash", "u"."RefreshToken", "u"."RefreshTokenExpiryTime", "u"."Telefono", "u"."TipoDocumento"
+FROM "Usuarios" AS "u"
+WHERE "u"."Email" = @__email_0
+LIMIT 1
+2025-10-03 14:56:57.488 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p14='?' (DbType = Int32), @p0='?' (DbType = Boolean), @p1='?' (Size = 13), @p2='?' (Size = 8), @p3='?' (Size = 24), @p4='?' (DbType = DateTime), @p5='?' (DbType = DateTime), @p6='?' (DbType = DateTime), @p7='?' (Size = 8), @p8='?' (Size = 10), @p9='?' (Size = 60), @p10='?' (Size = 44), @p11='?' (DbType = DateTime), @p12='?' (Size = 10), @p13='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Usuarios" SET "Activo" = @p0, "Apellido" = @p1, "Direccion" = @p2, "Email" = @p3, "FechaCreacion" = @p4, "FechaModificacion" = @p5, "FechaNacimiento" = @p6, "Nombre" = @p7, "NumeroDocumento" = @p8, "PasswordHash" = @p9, "RefreshToken" = @p10, "RefreshTokenExpiryTime" = @p11, "Telefono" = @p12, "TipoDocumento" = @p13
+WHERE "Id" = @p14
+RETURNING 1;
+2025-10-03 14:56:57.519 -05:00 [INF] Executing OkObjectResult, writing value of type 'BackendAPI.Domain.DTOs.AuthResponseDto'.
+2025-10-03 14:56:57.597 -05:00 [INF] Executed action BackendAPI.Controllers.AuthController.Login (BackendAPI) in 918.7218ms
+2025-10-03 14:56:57.605 -05:00 [INF] Executed endpoint 'BackendAPI.Controllers.AuthController.Login (BackendAPI)'
+2025-10-03 14:56:57.627 -05:00 [INF] Request finished HTTP/1.1 POST https://localhost:54254/api/auth/login - 200 null application/json; charset=utf-8 1254.9339ms
+2025-10-03 14:57:44.480 -05:00 [INF] Request starting HTTP/1.1 POST https://localhost:54254/api/usuarios - application/json 288
+2025-10-03 14:57:44.610 -05:00 [INF] Executing endpoint 'BackendAPI.Controllers.UsuariosController.CreateUsuario (BackendAPI)'
+2025-10-03 14:57:44.626 -05:00 [INF] Route matched with {action = "CreateUsuario", controller = "Usuarios"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BackendAPI.Domain.DTOs.UsuarioDto]] CreateUsuario(BackendAPI.Application.Features.Usuarios.Commands.CreateUsuario.CreateUsuarioCommand) on controller BackendAPI.Controllers.UsuariosController (BackendAPI).
+2025-10-03 14:57:44.764 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__email_0='?' (Size = 22)], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Usuarios" AS "u"
+    WHERE "u"."Email" = @__email_0)
+2025-10-03 14:57:44.799 -05:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (Size = 12), @p1='?' (Size = 24), @p2='?' (Size = 22), @p3='?' (DbType = DateTime), @p4='?' (DbType = DateTime), @p5='?' (DbType = DateTime), @p6='?' (Size = 11), @p7='?' (Size = 8), @p8='?', @p9='?', @p10='?' (DbType = DateTime), @p11='?' (Size = 10), @p12='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Usuarios" ("Apellido", "Direccion", "Email", "FechaCreacion", "FechaModificacion", "FechaNacimiento", "Nombre", "NumeroDocumento", "PasswordHash", "RefreshToken", "RefreshTokenExpiryTime", "Telefono", "TipoDocumento")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12)
+RETURNING "Id", "Activo";
+2025-10-03 14:57:44.834 -05:00 [INF] Executing CreatedAtActionResult, writing value of type 'BackendAPI.Domain.DTOs.UsuarioDto'.
+2025-10-03 14:57:44.861 -05:00 [INF] Executed action BackendAPI.Controllers.UsuariosController.CreateUsuario (BackendAPI) in 228.3103ms
+2025-10-03 14:57:44.865 -05:00 [INF] Executed endpoint 'BackendAPI.Controllers.UsuariosController.CreateUsuario (BackendAPI)'
+2025-10-03 14:57:44.868 -05:00 [INF] Request finished HTTP/1.1 POST https://localhost:54254/api/usuarios - 201 null application/json; charset=utf-8 387.5041ms
+2025-10-03 14:57:54.072 -05:00 [INF] Request starting HTTP/1.1 DELETE https://localhost:54254/api/usuarios/6 - application/json 288
+2025-10-03 14:57:54.082 -05:00 [INF] Executing endpoint 'BackendAPI.Controllers.UsuariosController.DeleteUsuario (BackendAPI)'
+2025-10-03 14:57:54.089 -05:00 [INF] Route matched with {action = "DeleteUsuario", controller = "Usuarios"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] DeleteUsuario(Int32) on controller BackendAPI.Controllers.UsuariosController (BackendAPI).
+2025-10-03 14:57:54.138 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Activo", "u"."Apellido", "u"."Direccion", "u"."Email", "u"."FechaCreacion", "u"."FechaModificacion", "u"."FechaNacimiento", "u"."Nombre", "u"."NumeroDocumento", "u"."PasswordHash", "u"."RefreshToken", "u"."RefreshTokenExpiryTime", "u"."Telefono", "u"."TipoDocumento"
+FROM "Usuarios" AS "u"
+WHERE "u"."Id" = @__p_0
+LIMIT 1
+2025-10-03 14:57:54.148 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p14='?' (DbType = Int32), @p0='?' (DbType = Boolean), @p1='?' (Size = 12), @p2='?' (Size = 24), @p3='?' (Size = 22), @p4='?' (DbType = DateTime), @p5='?' (DbType = DateTime), @p6='?' (DbType = DateTime), @p7='?' (Size = 11), @p8='?' (Size = 8), @p9='?', @p10='?', @p11='?' (DbType = DateTime), @p12='?' (Size = 10), @p13='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Usuarios" SET "Activo" = @p0, "Apellido" = @p1, "Direccion" = @p2, "Email" = @p3, "FechaCreacion" = @p4, "FechaModificacion" = @p5, "FechaNacimiento" = @p6, "Nombre" = @p7, "NumeroDocumento" = @p8, "PasswordHash" = @p9, "RefreshToken" = @p10, "RefreshTokenExpiryTime" = @p11, "Telefono" = @p12, "TipoDocumento" = @p13
+WHERE "Id" = @p14
+RETURNING 1;
+2025-10-03 14:57:54.159 -05:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2025-10-03 14:57:54.164 -05:00 [INF] Executed action BackendAPI.Controllers.UsuariosController.DeleteUsuario (BackendAPI) in 67.1542ms
+2025-10-03 14:57:54.167 -05:00 [INF] Executed endpoint 'BackendAPI.Controllers.UsuariosController.DeleteUsuario (BackendAPI)'
+2025-10-03 14:57:54.171 -05:00 [INF] Request finished HTTP/1.1 DELETE https://localhost:54254/api/usuarios/6 - 204 null null 98.4269ms
+2025-10-03 14:58:04.732 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:54254/api/usuarios/6 - application/json 288
+2025-10-03 14:58:04.756 -05:00 [INF] Executing endpoint 'BackendAPI.Controllers.UsuariosController.GetUsuario (BackendAPI)'
+2025-10-03 14:58:04.774 -05:00 [INF] Route matched with {action = "GetUsuario", controller = "Usuarios"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BackendAPI.Domain.DTOs.UsuarioDto]] GetUsuario(Int32) on controller BackendAPI.Controllers.UsuariosController (BackendAPI).
+2025-10-03 14:58:04.796 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Activo", "u"."Apellido", "u"."Direccion", "u"."Email", "u"."FechaCreacion", "u"."FechaModificacion", "u"."FechaNacimiento", "u"."Nombre", "u"."NumeroDocumento", "u"."PasswordHash", "u"."RefreshToken", "u"."RefreshTokenExpiryTime", "u"."Telefono", "u"."TipoDocumento"
+FROM "Usuarios" AS "u"
+WHERE "u"."Id" = @__p_0
+LIMIT 1
+2025-10-03 14:58:04.807 -05:00 [INF] Executing OkObjectResult, writing value of type 'BackendAPI.Domain.DTOs.UsuarioDto'.
+2025-10-03 14:58:04.811 -05:00 [INF] Executed action BackendAPI.Controllers.UsuariosController.GetUsuario (BackendAPI) in 22.0626ms
+2025-10-03 14:58:04.815 -05:00 [INF] Executed endpoint 'BackendAPI.Controllers.UsuariosController.GetUsuario (BackendAPI)'
+2025-10-03 14:58:04.822 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:54254/api/usuarios/6 - 200 null application/json; charset=utf-8 89.1874ms
+2025-10-03 14:58:10.415 -05:00 [INF] Request starting HTTP/1.1 DELETE https://localhost:54254/api/usuarios/6 - application/json 288
+2025-10-03 14:58:10.429 -05:00 [INF] Executing endpoint 'BackendAPI.Controllers.UsuariosController.DeleteUsuario (BackendAPI)'
+2025-10-03 14:58:10.440 -05:00 [INF] Route matched with {action = "DeleteUsuario", controller = "Usuarios"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] DeleteUsuario(Int32) on controller BackendAPI.Controllers.UsuariosController (BackendAPI).
+2025-10-03 14:58:10.462 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Activo", "u"."Apellido", "u"."Direccion", "u"."Email", "u"."FechaCreacion", "u"."FechaModificacion", "u"."FechaNacimiento", "u"."Nombre", "u"."NumeroDocumento", "u"."PasswordHash", "u"."RefreshToken", "u"."RefreshTokenExpiryTime", "u"."Telefono", "u"."TipoDocumento"
+FROM "Usuarios" AS "u"
+WHERE "u"."Id" = @__p_0
+LIMIT 1
+2025-10-03 14:58:10.471 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p14='?' (DbType = Int32), @p0='?' (DbType = Boolean), @p1='?' (Size = 12), @p2='?' (Size = 24), @p3='?' (Size = 22), @p4='?' (DbType = DateTime), @p5='?' (DbType = DateTime), @p6='?' (DbType = DateTime), @p7='?' (Size = 11), @p8='?' (Size = 8), @p9='?', @p10='?', @p11='?' (DbType = DateTime), @p12='?' (Size = 10), @p13='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Usuarios" SET "Activo" = @p0, "Apellido" = @p1, "Direccion" = @p2, "Email" = @p3, "FechaCreacion" = @p4, "FechaModificacion" = @p5, "FechaNacimiento" = @p6, "Nombre" = @p7, "NumeroDocumento" = @p8, "PasswordHash" = @p9, "RefreshToken" = @p10, "RefreshTokenExpiryTime" = @p11, "Telefono" = @p12, "TipoDocumento" = @p13
+WHERE "Id" = @p14
+RETURNING 1;
+2025-10-03 14:58:10.484 -05:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2025-10-03 14:58:10.489 -05:00 [INF] Executed action BackendAPI.Controllers.UsuariosController.DeleteUsuario (BackendAPI) in 34.8099ms
+2025-10-03 14:58:10.496 -05:00 [INF] Executed endpoint 'BackendAPI.Controllers.UsuariosController.DeleteUsuario (BackendAPI)'
+2025-10-03 14:58:10.501 -05:00 [INF] Request finished HTTP/1.1 DELETE https://localhost:54254/api/usuarios/6 - 204 null null 85.1388ms
+2025-10-03 14:58:24.358 -05:00 [INF] Request starting HTTP/1.1 PUT https://localhost:54254/api/usuarios/6 - application/json 289
+2025-10-03 14:58:24.369 -05:00 [INF] Executing endpoint 'BackendAPI.Controllers.UsuariosController.UpdateUsuario (BackendAPI)'
+2025-10-03 14:58:24.387 -05:00 [INF] Route matched with {action = "UpdateUsuario", controller = "Usuarios"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BackendAPI.Domain.DTOs.UsuarioDto]] UpdateUsuario(Int32, BackendAPI.Application.Features.Usuarios.Commands.UpdateUsuario.UpdateUsuarioCommand) on controller BackendAPI.Controllers.UsuariosController (BackendAPI).
+2025-10-03 14:58:24.423 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Activo", "u"."Apellido", "u"."Direccion", "u"."Email", "u"."FechaCreacion", "u"."FechaModificacion", "u"."FechaNacimiento", "u"."Nombre", "u"."NumeroDocumento", "u"."PasswordHash", "u"."RefreshToken", "u"."RefreshTokenExpiryTime", "u"."Telefono", "u"."TipoDocumento"
+FROM "Usuarios" AS "u"
+WHERE "u"."Id" = @__p_0
+LIMIT 1
+2025-10-03 14:58:24.440 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__email_0='?' (Size = 22), @__excludeId_Value_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Usuarios" AS "u"
+    WHERE "u"."Email" = @__email_0 AND "u"."Id" <> @__excludeId_Value_1)
+2025-10-03 14:58:24.450 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[@p14='?' (DbType = Int32), @p0='?' (DbType = Boolean), @p1='?' (Size = 13), @p2='?' (Size = 24), @p3='?' (Size = 22), @p4='?' (DbType = DateTime), @p5='?' (DbType = DateTime), @p6='?' (DbType = DateTime), @p7='?' (Size = 11), @p8='?' (Size = 8), @p9='?', @p10='?', @p11='?' (DbType = DateTime), @p12='?' (Size = 10), @p13='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Usuarios" SET "Activo" = @p0, "Apellido" = @p1, "Direccion" = @p2, "Email" = @p3, "FechaCreacion" = @p4, "FechaModificacion" = @p5, "FechaNacimiento" = @p6, "Nombre" = @p7, "NumeroDocumento" = @p8, "PasswordHash" = @p9, "RefreshToken" = @p10, "RefreshTokenExpiryTime" = @p11, "Telefono" = @p12, "TipoDocumento" = @p13
+WHERE "Id" = @p14
+RETURNING 1;
+2025-10-03 14:58:24.467 -05:00 [INF] Executing OkObjectResult, writing value of type 'BackendAPI.Domain.DTOs.UsuarioDto'.
+2025-10-03 14:58:24.472 -05:00 [INF] Executed action BackendAPI.Controllers.UsuariosController.UpdateUsuario (BackendAPI) in 72.4899ms
+2025-10-03 14:58:24.478 -05:00 [INF] Executed endpoint 'BackendAPI.Controllers.UsuariosController.UpdateUsuario (BackendAPI)'
+2025-10-03 14:58:24.480 -05:00 [INF] Request finished HTTP/1.1 PUT https://localhost:54254/api/usuarios/6 - 200 null application/json; charset=utf-8 121.5627ms
+2025-10-03 14:58:28.859 -05:00 [INF] Request starting HTTP/1.1 PUT https://localhost:54254/api/usuarios/6 - application/json 288
+2025-10-03 14:58:28.875 -05:00 [INF] Executing endpoint 'BackendAPI.Controllers.UsuariosController.UpdateUsuario (BackendAPI)'
+2025-10-03 14:58:28.881 -05:00 [INF] Route matched with {action = "UpdateUsuario", controller = "Usuarios"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BackendAPI.Domain.DTOs.UsuarioDto]] UpdateUsuario(Int32, BackendAPI.Application.Features.Usuarios.Commands.UpdateUsuario.UpdateUsuarioCommand) on controller BackendAPI.Controllers.UsuariosController (BackendAPI).
+2025-10-03 14:58:28.903 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Activo", "u"."Apellido", "u"."Direccion", "u"."Email", "u"."FechaCreacion", "u"."FechaModificacion", "u"."FechaNacimiento", "u"."Nombre", "u"."NumeroDocumento", "u"."PasswordHash", "u"."RefreshToken", "u"."RefreshTokenExpiryTime", "u"."Telefono", "u"."TipoDocumento"
+FROM "Usuarios" AS "u"
+WHERE "u"."Id" = @__p_0
+LIMIT 1
+2025-10-03 14:58:28.914 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__email_0='?' (Size = 22), @__excludeId_Value_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Usuarios" AS "u"
+    WHERE "u"."Email" = @__email_0 AND "u"."Id" <> @__excludeId_Value_1)
+2025-10-03 14:58:28.925 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p14='?' (DbType = Int32), @p0='?' (DbType = Boolean), @p1='?' (Size = 12), @p2='?' (Size = 24), @p3='?' (Size = 22), @p4='?' (DbType = DateTime), @p5='?' (DbType = DateTime), @p6='?' (DbType = DateTime), @p7='?' (Size = 11), @p8='?' (Size = 8), @p9='?', @p10='?', @p11='?' (DbType = DateTime), @p12='?' (Size = 10), @p13='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Usuarios" SET "Activo" = @p0, "Apellido" = @p1, "Direccion" = @p2, "Email" = @p3, "FechaCreacion" = @p4, "FechaModificacion" = @p5, "FechaNacimiento" = @p6, "Nombre" = @p7, "NumeroDocumento" = @p8, "PasswordHash" = @p9, "RefreshToken" = @p10, "RefreshTokenExpiryTime" = @p11, "Telefono" = @p12, "TipoDocumento" = @p13
+WHERE "Id" = @p14
+RETURNING 1;
+2025-10-03 14:58:28.940 -05:00 [INF] Executing OkObjectResult, writing value of type 'BackendAPI.Domain.DTOs.UsuarioDto'.
+2025-10-03 14:58:28.945 -05:00 [INF] Executed action BackendAPI.Controllers.UsuariosController.UpdateUsuario (BackendAPI) in 49.7539ms
+2025-10-03 14:58:28.949 -05:00 [INF] Executed endpoint 'BackendAPI.Controllers.UsuariosController.UpdateUsuario (BackendAPI)'
+2025-10-03 14:58:28.954 -05:00 [INF] Request finished HTTP/1.1 PUT https://localhost:54254/api/usuarios/6 - 200 null application/json; charset=utf-8 95.3929ms
+2025-10-03 14:58:34.192 -05:00 [INF] Request starting HTTP/1.1 DELETE https://localhost:54254/api/usuarios/6 - application/json 288
+2025-10-03 14:58:34.199 -05:00 [INF] Executing endpoint 'BackendAPI.Controllers.UsuariosController.DeleteUsuario (BackendAPI)'
+2025-10-03 14:58:34.201 -05:00 [INF] Route matched with {action = "DeleteUsuario", controller = "Usuarios"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] DeleteUsuario(Int32) on controller BackendAPI.Controllers.UsuariosController (BackendAPI).
+2025-10-03 14:58:34.218 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Activo", "u"."Apellido", "u"."Direccion", "u"."Email", "u"."FechaCreacion", "u"."FechaModificacion", "u"."FechaNacimiento", "u"."Nombre", "u"."NumeroDocumento", "u"."PasswordHash", "u"."RefreshToken", "u"."RefreshTokenExpiryTime", "u"."Telefono", "u"."TipoDocumento"
+FROM "Usuarios" AS "u"
+WHERE "u"."Id" = @__p_0
+LIMIT 1
+2025-10-03 14:58:34.232 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p14='?' (DbType = Int32), @p0='?' (DbType = Boolean), @p1='?' (Size = 12), @p2='?' (Size = 24), @p3='?' (Size = 22), @p4='?' (DbType = DateTime), @p5='?' (DbType = DateTime), @p6='?' (DbType = DateTime), @p7='?' (Size = 11), @p8='?' (Size = 8), @p9='?', @p10='?', @p11='?' (DbType = DateTime), @p12='?' (Size = 10), @p13='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Usuarios" SET "Activo" = @p0, "Apellido" = @p1, "Direccion" = @p2, "Email" = @p3, "FechaCreacion" = @p4, "FechaModificacion" = @p5, "FechaNacimiento" = @p6, "Nombre" = @p7, "NumeroDocumento" = @p8, "PasswordHash" = @p9, "RefreshToken" = @p10, "RefreshTokenExpiryTime" = @p11, "Telefono" = @p12, "TipoDocumento" = @p13
+WHERE "Id" = @p14
+RETURNING 1;
+2025-10-03 14:58:34.245 -05:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2025-10-03 14:58:34.248 -05:00 [INF] Executed action BackendAPI.Controllers.UsuariosController.DeleteUsuario (BackendAPI) in 41.4091ms
+2025-10-03 14:58:34.251 -05:00 [INF] Executed endpoint 'BackendAPI.Controllers.UsuariosController.DeleteUsuario (BackendAPI)'
+2025-10-03 14:58:34.254 -05:00 [INF] Request finished HTTP/1.1 DELETE https://localhost:54254/api/usuarios/6 - 204 null null 61.9203ms
+2025-10-03 14:59:11.646 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:54254/api/usuarios - application/json 288
+2025-10-03 14:59:11.659 -05:00 [INF] Executing endpoint 'BackendAPI.Controllers.UsuariosController.GetUsuarios (BackendAPI)'
+2025-10-03 14:59:11.684 -05:00 [INF] Route matched with {action = "GetUsuarios", controller = "Usuarios"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BackendAPI.Domain.DTOs.PagedResultDto`1[BackendAPI.Domain.DTOs.UsuarioDto]]] GetUsuarios(BackendAPI.Domain.DTOs.PaginationDto) on controller BackendAPI.Controllers.UsuariosController (BackendAPI).
+2025-10-03 14:59:11.788 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Usuarios" AS "u"
+WHERE "u"."Activo"
+2025-10-03 14:59:11.815 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Activo", "u"."Apellido", "u"."Direccion", "u"."Email", "u"."FechaCreacion", "u"."FechaModificacion", "u"."FechaNacimiento", "u"."Nombre", "u"."NumeroDocumento", "u"."PasswordHash", "u"."RefreshToken", "u"."RefreshTokenExpiryTime", "u"."Telefono", "u"."TipoDocumento"
+FROM "Usuarios" AS "u"
+WHERE "u"."Activo"
+ORDER BY "u"."Nombre"
+LIMIT @__p_1 OFFSET @__p_0
+2025-10-03 14:59:11.852 -05:00 [INF] Executing OkObjectResult, writing value of type 'BackendAPI.Domain.DTOs.PagedResultDto`1[[BackendAPI.Domain.DTOs.UsuarioDto, BackendAPI.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-03 14:59:11.871 -05:00 [INF] Executed action BackendAPI.Controllers.UsuariosController.GetUsuarios (BackendAPI) in 168.4239ms
+2025-10-03 14:59:11.877 -05:00 [INF] Executed endpoint 'BackendAPI.Controllers.UsuariosController.GetUsuarios (BackendAPI)'
+2025-10-03 14:59:11.884 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:54254/api/usuarios - 200 null application/json; charset=utf-8 238.2609ms
+2025-10-03 14:59:44.435 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:54254/api/productos - application/json 251
+2025-10-03 14:59:44.449 -05:00 [INF] Executing endpoint 'BackendAPI.Controllers.ProductosController.GetProductos (BackendAPI)'
+2025-10-03 14:59:44.463 -05:00 [INF] Route matched with {action = "GetProductos", controller = "Productos"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[BackendAPI.Domain.DTOs.ProductoDto]]] GetProductos() on controller BackendAPI.Controllers.ProductosController (BackendAPI).
+2025-10-03 14:59:44.499 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Activo", "p"."Categoria", "p"."Codigo", "p"."Descripcion", "p"."FechaCreacion", "p"."FechaModificacion", "p"."ImagenUrl", "p"."Nombre", "p"."Precio", "p"."Stock"
+FROM "Productos" AS "p"
+WHERE "p"."Activo" AND "p"."Stock" > 0
+2025-10-03 14:59:44.524 -05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BackendAPI.Domain.DTOs.ProductoDto, BackendAPI.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-03 14:59:44.544 -05:00 [INF] Executed action BackendAPI.Controllers.ProductosController.GetProductos (BackendAPI) in 63.9081ms
+2025-10-03 14:59:44.547 -05:00 [INF] Executed endpoint 'BackendAPI.Controllers.ProductosController.GetProductos (BackendAPI)'
+2025-10-03 14:59:44.552 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:54254/api/productos - 200 null application/json; charset=utf-8 116.5648ms
+2025-10-03 14:59:51.570 -05:00 [INF] Request starting HTTP/1.1 POST https://localhost:54254/api/productos - application/json 251
+2025-10-03 14:59:51.576 -05:00 [INF] Executing endpoint 'BackendAPI.Controllers.ProductosController.CreateProducto (BackendAPI)'
+2025-10-03 14:59:51.582 -05:00 [INF] Route matched with {action = "CreateProducto", controller = "Productos"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BackendAPI.Domain.DTOs.ProductoDto]] CreateProducto(BackendAPI.Application.Features.Productos.Commands.CreateProducto.CreateProductoCommand) on controller BackendAPI.Controllers.ProductosController (BackendAPI).
+2025-10-03 14:59:51.641 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__codigo_0='?' (Size = 15)], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Productos" AS "p"
+    WHERE "p"."Codigo" = @__codigo_0)
+2025-10-03 14:59:51.648 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 12), @p1='?' (Size = 15), @p2='?' (Size = 61), @p3='?' (DbType = DateTime), @p4='?' (DbType = DateTime), @p5='?', @p6='?' (Size = 29), @p7='?' (DbType = Decimal), @p8='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Productos" ("Categoria", "Codigo", "Descripcion", "FechaCreacion", "FechaModificacion", "ImagenUrl", "Nombre", "Precio", "Stock")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8)
+RETURNING "Id", "Activo";
+2025-10-03 14:59:51.658 -05:00 [INF] Executing CreatedAtActionResult, writing value of type 'BackendAPI.Domain.DTOs.ProductoDto'.
+2025-10-03 14:59:51.665 -05:00 [INF] Executed action BackendAPI.Controllers.ProductosController.CreateProducto (BackendAPI) in 72.918ms
+2025-10-03 14:59:51.673 -05:00 [INF] Executed endpoint 'BackendAPI.Controllers.ProductosController.CreateProducto (BackendAPI)'
+2025-10-03 14:59:51.677 -05:00 [INF] Request finished HTTP/1.1 POST https://localhost:54254/api/productos - 201 null application/json; charset=utf-8 107.3071ms
+2025-10-03 15:00:13.601 -05:00 [INF] Request starting HTTP/1.1 POST https://localhost:54254/api/pedidos - application/json 329
+2025-10-03 15:00:13.618 -05:00 [INF] Executing endpoint 'BackendAPI.Controllers.PedidosController.CreatePedido (BackendAPI)'
+2025-10-03 15:00:13.639 -05:00 [INF] Route matched with {action = "CreatePedido", controller = "Pedidos"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BackendAPI.Domain.DTOs.PedidoDto]] CreatePedido(BackendAPI.Application.Features.Pedidos.Commands.CreatePedido.CreatePedidoCommand) on controller BackendAPI.Controllers.PedidosController (BackendAPI).
+2025-10-03 15:00:13.708 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Activo", "u"."Apellido", "u"."Direccion", "u"."Email", "u"."FechaCreacion", "u"."FechaModificacion", "u"."FechaNacimiento", "u"."Nombre", "u"."NumeroDocumento", "u"."PasswordHash", "u"."RefreshToken", "u"."RefreshTokenExpiryTime", "u"."Telefono", "u"."TipoDocumento"
+FROM "Usuarios" AS "u"
+WHERE "u"."Id" = @__p_0
+LIMIT 1
+2025-10-03 15:00:13.717 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Activo", "p"."Categoria", "p"."Codigo", "p"."Descripcion", "p"."FechaCreacion", "p"."FechaModificacion", "p"."ImagenUrl", "p"."Nombre", "p"."Precio", "p"."Stock"
+FROM "Productos" AS "p"
+WHERE "p"."Id" = @__p_0
+LIMIT 1
+2025-10-03 15:00:13.724 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Activo", "p"."Categoria", "p"."Codigo", "p"."Descripcion", "p"."FechaCreacion", "p"."FechaModificacion", "p"."ImagenUrl", "p"."Nombre", "p"."Precio", "p"."Stock"
+FROM "Productos" AS "p"
+WHERE "p"."Id" = @__p_0
+LIMIT 1
+2025-10-03 15:00:13.734 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Activo", "p"."Comentarios", "p"."DireccionEntrega", "p"."Estado", "p"."FechaCreacion", "p"."FechaModificacion", "p"."FechaPedido", "p"."NumeroPedido", "p"."Total", "p"."UsuarioId"
+FROM "Pedidos" AS "p"
+ORDER BY "p"."Id" DESC
+LIMIT 1
+2025-10-03 15:00:13.752 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p10='?' (DbType = Int32), @p0='?' (DbType = Boolean), @p1='?' (Size = 12), @p2='?' (Size = 14), @p3='?' (Size = 77), @p4='?' (DbType = DateTime), @p5='?' (DbType = DateTime), @p6='?' (Size = 47), @p7='?' (Size = 23), @p8='?' (DbType = Decimal), @p9='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Productos" SET "Activo" = @p0, "Categoria" = @p1, "Codigo" = @p2, "Descripcion" = @p3, "FechaCreacion" = @p4, "FechaModificacion" = @p5, "ImagenUrl" = @p6, "Nombre" = @p7, "Precio" = @p8, "Stock" = @p9
+WHERE "Id" = @p10
+RETURNING 1;
+2025-10-03 15:00:13.767 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p10='?' (DbType = Int32), @p0='?' (DbType = Boolean), @p1='?' (Size = 7), @p2='?' (Size = 11), @p3='?' (Size = 83), @p4='?' (DbType = DateTime), @p5='?' (DbType = DateTime), @p6='?' (Size = 53), @p7='?' (Size = 25), @p8='?' (DbType = Decimal), @p9='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Productos" SET "Activo" = @p0, "Categoria" = @p1, "Codigo" = @p2, "Descripcion" = @p3, "FechaCreacion" = @p4, "FechaModificacion" = @p5, "ImagenUrl" = @p6, "Nombre" = @p7, "Precio" = @p8, "Stock" = @p9
+WHERE "Id" = @p10
+RETURNING 1;
+2025-10-03 15:00:13.794 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 37), @p1='?' (Size = 25), @p2='?' (Size = 9), @p3='?' (DbType = DateTime), @p4='?' (DbType = DateTime), @p5='?' (DbType = DateTime), @p6='?' (Size = 10), @p7='?' (DbType = Decimal), @p8='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Pedidos" ("Comentarios", "DireccionEntrega", "Estado", "FechaCreacion", "FechaModificacion", "FechaPedido", "NumeroPedido", "Total", "UsuarioId")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8)
+RETURNING "Id", "Activo";
+2025-10-03 15:00:13.808 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p9='?' (DbType = Int32), @p10='?' (DbType = DateTime), @p11='?' (DbType = DateTime), @p12='?' (DbType = Int32), @p13='?' (DbType = Decimal), @p14='?' (DbType = Int32), @p15='?' (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "PedidoItems" ("Cantidad", "FechaCreacion", "FechaModificacion", "PedidoId", "PrecioUnitario", "ProductoId", "Subtotal")
+VALUES (@p9, @p10, @p11, @p12, @p13, @p14, @p15)
+RETURNING "Id", "Activo";
+2025-10-03 15:00:13.814 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = DateTime), @p2='?' (DbType = DateTime), @p3='?' (DbType = Int32), @p4='?' (DbType = Decimal), @p5='?' (DbType = Int32), @p6='?' (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "PedidoItems" ("Cantidad", "FechaCreacion", "FechaModificacion", "PedidoId", "PrecioUnitario", "ProductoId", "Subtotal")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6)
+RETURNING "Id", "Activo";
+2025-10-03 15:00:13.829 -05:00 [INF] Executing CreatedAtActionResult, writing value of type 'BackendAPI.Domain.DTOs.PedidoDto'.
+2025-10-03 15:00:13.839 -05:00 [INF] Executed action BackendAPI.Controllers.PedidosController.CreatePedido (BackendAPI) in 182.4147ms
+2025-10-03 15:00:13.842 -05:00 [INF] Executed endpoint 'BackendAPI.Controllers.PedidosController.CreatePedido (BackendAPI)'
+2025-10-03 15:00:13.847 -05:00 [INF] Request finished HTTP/1.1 POST https://localhost:54254/api/pedidos - 201 null application/json; charset=utf-8 246.0953ms
+2025-10-03 15:01:07.394 -05:00 [INF] Request starting HTTP/1.1 POST https://localhost:54254/api/auht/login - application/json 75
+2025-10-03 15:01:07.415 -05:00 [INF] Request finished HTTP/1.1 POST https://localhost:54254/api/auht/login - 404 0 null 21.5719ms
+2025-10-03 15:01:07.443 -05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST https://localhost:54254/api/auht/login, Response status code: 404
+2025-10-03 15:01:15.738 -05:00 [INF] Request starting HTTP/1.1 POST https://localhost:54254/api/auth/login - application/json 75
+2025-10-03 15:01:15.758 -05:00 [INF] Executing endpoint 'BackendAPI.Controllers.AuthController.Login (BackendAPI)'
+2025-10-03 15:01:15.769 -05:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BackendAPI.Domain.DTOs.AuthResponseDto]] Login(BackendAPI.Domain.DTOs.LoginDto) on controller BackendAPI.Controllers.AuthController (BackendAPI).
+2025-10-03 15:01:15.795 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__email_0='?' (Size = 24)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Activo", "u"."Apellido", "u"."Direccion", "u"."Email", "u"."FechaCreacion", "u"."FechaModificacion", "u"."FechaNacimiento", "u"."Nombre", "u"."NumeroDocumento", "u"."PasswordHash", "u"."RefreshToken", "u"."RefreshTokenExpiryTime", "u"."Telefono", "u"."TipoDocumento"
+FROM "Usuarios" AS "u"
+WHERE "u"."Email" = @__email_0
+LIMIT 1
+2025-10-03 15:01:16.141 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p14='?' (DbType = Int32), @p0='?' (DbType = Boolean), @p1='?' (Size = 13), @p2='?' (Size = 8), @p3='?' (Size = 24), @p4='?' (DbType = DateTime), @p5='?' (DbType = DateTime), @p6='?' (DbType = DateTime), @p7='?' (Size = 8), @p8='?' (Size = 10), @p9='?' (Size = 60), @p10='?' (Size = 44), @p11='?' (DbType = DateTime), @p12='?' (Size = 10), @p13='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Usuarios" SET "Activo" = @p0, "Apellido" = @p1, "Direccion" = @p2, "Email" = @p3, "FechaCreacion" = @p4, "FechaModificacion" = @p5, "FechaNacimiento" = @p6, "Nombre" = @p7, "NumeroDocumento" = @p8, "PasswordHash" = @p9, "RefreshToken" = @p10, "RefreshTokenExpiryTime" = @p11, "Telefono" = @p12, "TipoDocumento" = @p13
+WHERE "Id" = @p14
+RETURNING 1;
+2025-10-03 15:01:16.164 -05:00 [INF] Executing OkObjectResult, writing value of type 'BackendAPI.Domain.DTOs.AuthResponseDto'.
+2025-10-03 15:01:16.174 -05:00 [INF] Executed action BackendAPI.Controllers.AuthController.Login (BackendAPI) in 386.1957ms
+2025-10-03 15:01:16.183 -05:00 [INF] Executed endpoint 'BackendAPI.Controllers.AuthController.Login (BackendAPI)'
+2025-10-03 15:01:16.193 -05:00 [INF] Request finished HTTP/1.1 POST https://localhost:54254/api/auth/login - 200 null application/json; charset=utf-8 455.1653ms
+2025-10-03 15:01:49.508 -05:00 [INF] Request starting HTTP/1.1 POST https://localhost:54254/api/auth/rovoke - application/json 72
+2025-10-03 15:01:49.521 -05:00 [INF] Request finished HTTP/1.1 POST https://localhost:54254/api/auth/rovoke - 404 0 null 12.7446ms
+2025-10-03 15:01:49.537 -05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST https://localhost:54254/api/auth/rovoke, Response status code: 404
+2025-10-03 15:02:51.320 -05:00 [INF] Request starting HTTP/1.1 POST https://localhost:54254/api/auth/re - application/json 72
+2025-10-03 15:02:51.329 -05:00 [INF] Request finished HTTP/1.1 POST https://localhost:54254/api/auth/re - 404 0 null 9.1229ms
+2025-10-03 15:02:51.337 -05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST https://localhost:54254/api/auth/re, Response status code: 404
+2025-10-03 15:02:55.698 -05:00 [INF] Request starting HTTP/1.1 POST https://localhost:54254/api/auth/revoke - application/json 72
+2025-10-03 15:02:55.712 -05:00 [INF] Executing endpoint 'BackendAPI.Controllers.AuthController.RevokeToken (BackendAPI)'
+2025-10-03 15:02:55.731 -05:00 [INF] Route matched with {action = "RevokeToken", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] RevokeToken(BackendAPI.Domain.DTOs.RefreshTokenDto) on controller BackendAPI.Controllers.AuthController (BackendAPI).
+2025-10-03 15:02:55.770 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__refreshToken_0='?' (Size = 44)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Activo", "u"."Apellido", "u"."Direccion", "u"."Email", "u"."FechaCreacion", "u"."FechaModificacion", "u"."FechaNacimiento", "u"."Nombre", "u"."NumeroDocumento", "u"."PasswordHash", "u"."RefreshToken", "u"."RefreshTokenExpiryTime", "u"."Telefono", "u"."TipoDocumento"
+FROM "Usuarios" AS "u"
+WHERE "u"."RefreshToken" = @__refreshToken_0
+LIMIT 1
+2025-10-03 15:02:55.777 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p14='?' (DbType = Int32), @p0='?' (DbType = Boolean), @p1='?' (Size = 13), @p2='?' (Size = 8), @p3='?' (Size = 24), @p4='?' (DbType = DateTime), @p5='?' (DbType = DateTime), @p6='?' (DbType = DateTime), @p7='?' (Size = 8), @p8='?' (Size = 10), @p9='?' (Size = 60), @p10='?', @p11='?' (DbType = DateTime), @p12='?' (Size = 10), @p13='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Usuarios" SET "Activo" = @p0, "Apellido" = @p1, "Direccion" = @p2, "Email" = @p3, "FechaCreacion" = @p4, "FechaModificacion" = @p5, "FechaNacimiento" = @p6, "Nombre" = @p7, "NumeroDocumento" = @p8, "PasswordHash" = @p9, "RefreshToken" = @p10, "RefreshTokenExpiryTime" = @p11, "Telefono" = @p12, "TipoDocumento" = @p13
+WHERE "Id" = @p14
+RETURNING 1;
+2025-10-03 15:02:55.791 -05:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-10-03 15:02:55.797 -05:00 [INF] Executed action BackendAPI.Controllers.AuthController.RevokeToken (BackendAPI) in 49.2671ms
+2025-10-03 15:02:55.803 -05:00 [INF] Executed endpoint 'BackendAPI.Controllers.AuthController.RevokeToken (BackendAPI)'
+2025-10-03 15:02:55.807 -05:00 [INF] Request finished HTTP/1.1 POST https://localhost:54254/api/auth/revoke - 200 null application/json; charset=utf-8 108.4734ms
+2025-10-03 15:03:29.581 -05:00 [INF] Request starting HTTP/1.1 POST https://localhost:54254/api/usuario - application/json 72
+2025-10-03 15:03:29.598 -05:00 [INF] Request finished HTTP/1.1 POST https://localhost:54254/api/usuario - 404 0 null 16.67ms
+2025-10-03 15:03:29.627 -05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST https://localhost:54254/api/usuario, Response status code: 404
+2025-10-03 15:03:37.882 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:54254/api/usuarios - application/json 72
+2025-10-03 15:03:37.889 -05:00 [INF] Executing endpoint 'BackendAPI.Controllers.UsuariosController.GetUsuarios (BackendAPI)'
+2025-10-03 15:03:37.894 -05:00 [INF] Route matched with {action = "GetUsuarios", controller = "Usuarios"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BackendAPI.Domain.DTOs.PagedResultDto`1[BackendAPI.Domain.DTOs.UsuarioDto]]] GetUsuarios(BackendAPI.Domain.DTOs.PaginationDto) on controller BackendAPI.Controllers.UsuariosController (BackendAPI).
+2025-10-03 15:03:37.906 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Usuarios" AS "u"
+WHERE "u"."Activo"
+2025-10-03 15:03:37.921 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Activo", "u"."Apellido", "u"."Direccion", "u"."Email", "u"."FechaCreacion", "u"."FechaModificacion", "u"."FechaNacimiento", "u"."Nombre", "u"."NumeroDocumento", "u"."PasswordHash", "u"."RefreshToken", "u"."RefreshTokenExpiryTime", "u"."Telefono", "u"."TipoDocumento"
+FROM "Usuarios" AS "u"
+WHERE "u"."Activo"
+ORDER BY "u"."Nombre"
+LIMIT @__p_1 OFFSET @__p_0
+2025-10-03 15:03:37.945 -05:00 [INF] Executing OkObjectResult, writing value of type 'BackendAPI.Domain.DTOs.PagedResultDto`1[[BackendAPI.Domain.DTOs.UsuarioDto, BackendAPI.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-03 15:03:37.955 -05:00 [INF] Executed action BackendAPI.Controllers.UsuariosController.GetUsuarios (BackendAPI) in 53.2615ms
+2025-10-03 15:03:37.963 -05:00 [INF] Executed endpoint 'BackendAPI.Controllers.UsuariosController.GetUsuarios (BackendAPI)'
+2025-10-03 15:03:37.967 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:54254/api/usuarios - 200 null application/json; charset=utf-8 85.1539ms
+2025-10-03 15:04:36.435 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:54254/api/usuarios - application/json 72
+2025-10-03 15:04:36.448 -05:00 [INF] Executing endpoint 'BackendAPI.Controllers.UsuariosController.GetUsuarios (BackendAPI)'
+2025-10-03 15:04:36.455 -05:00 [INF] Route matched with {action = "GetUsuarios", controller = "Usuarios"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BackendAPI.Domain.DTOs.PagedResultDto`1[BackendAPI.Domain.DTOs.UsuarioDto]]] GetUsuarios(BackendAPI.Domain.DTOs.PaginationDto) on controller BackendAPI.Controllers.UsuariosController (BackendAPI).
+2025-10-03 15:04:36.471 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Usuarios" AS "u"
+WHERE "u"."Activo"
+2025-10-03 15:04:36.481 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Activo", "u"."Apellido", "u"."Direccion", "u"."Email", "u"."FechaCreacion", "u"."FechaModificacion", "u"."FechaNacimiento", "u"."Nombre", "u"."NumeroDocumento", "u"."PasswordHash", "u"."RefreshToken", "u"."RefreshTokenExpiryTime", "u"."Telefono", "u"."TipoDocumento"
+FROM "Usuarios" AS "u"
+WHERE "u"."Activo"
+ORDER BY "u"."Nombre"
+LIMIT @__p_1 OFFSET @__p_0
+2025-10-03 15:04:36.495 -05:00 [INF] Executing OkObjectResult, writing value of type 'BackendAPI.Domain.DTOs.PagedResultDto`1[[BackendAPI.Domain.DTOs.UsuarioDto, BackendAPI.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-03 15:04:36.502 -05:00 [INF] Executed action BackendAPI.Controllers.UsuariosController.GetUsuarios (BackendAPI) in 39.406ms
+2025-10-03 15:04:36.510 -05:00 [INF] Executed endpoint 'BackendAPI.Controllers.UsuariosController.GetUsuarios (BackendAPI)'
+2025-10-03 15:04:36.518 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:54254/api/usuarios - 200 null application/json; charset=utf-8 81.8545ms
