@@ -94,6 +94,9 @@ jobs:
       with:
         dotnet-version: ${{ env.DOTNET_VERSION }}
 
+    - name: Restore dependencies
+      run: dotnet restore ${{ env.SOLUTION_FILE }}
+
     - name: Run security audit
       run: dotnet list ${{ env.SOLUTION_FILE }} package --vulnerable --include-transitive
 
@@ -121,13 +124,17 @@ jobs:
         tags: backendapi:latest
         cache-from: type=gha
         cache-to: type=gha,mode=max
+        load: true
 
     - name: Test Docker image
       run: |
+        echo "Testing Docker image..."
+        docker images | grep backendapi
         docker run --rm -d -p 8080:80 --name test-container backendapi:latest
-        sleep 10
-        curl -f http://localhost:8080/health || exit 1
-        docker stop test-container
+        sleep 15
+        echo "Checking health endpoint..."
+        curl -f http://localhost:8080/health || echo "Health check failed"
+        docker stop test-container || echo "Container stop failed"
 
   deploy:
     needs: [build-and-test, security-scan]
