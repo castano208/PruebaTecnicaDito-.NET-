@@ -28,6 +28,22 @@ az ad sp create-for-rbac --name "BackendAPI-GitHub" --role contributor --scopes 
    - **Nombre**: `AZURE_CREDENTIALS`
    - **Valor**: El JSON completo del comando anterior
 
+3. **Formato correcto del JSON:**
+```json
+{
+  "clientId": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+  "clientSecret": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+  "subscriptionId": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+  "tenantId": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+  "activeDirectoryEndpointUrl": "https://login.microsoftonline.com",
+  "resourceManagerEndpointUrl": "https://management.azure.com/",
+  "activeDirectoryGraphResourceId": "https://graph.windows.net/",
+  "sqlManagementEndpointUrl": "https://management.core.windows.net:8443/",
+  "galleryEndpointUrl": "https://gallery.azure.com/",
+  "managementEndpointUrl": "https://management.core.windows.net/"
+}
+```
+
 #### **Opción B: Publish Profile (Alternativo)**
 
 1. **Descargar Publish Profile:**
@@ -109,6 +125,35 @@ az webapp log download --name backendapi-prod --resource-group BackendAPI-RG
 1. Verificar que `AZURE_CREDENTIALS` está configurado
 2. Verificar que el JSON del service principal es válido
 3. Verificar que el service principal tiene permisos en el resource group
+
+### **Error: "Not all values are present. Ensure 'client-id' and 'tenant-id' are supplied"**
+
+**Solución:**
+1. **Verificar formato del JSON:**
+   ```bash
+   # El JSON debe tener exactamente estos campos:
+   {
+     "clientId": "...",
+     "clientSecret": "...",
+     "subscriptionId": "...",
+     "tenantId": "..."
+   }
+   ```
+
+2. **Regenerar Service Principal:**
+   ```bash
+   # Eliminar el anterior
+   az ad sp delete --id {client-id}
+   
+   # Crear uno nuevo
+   az ad sp create-for-rbac --name "BackendAPI-GitHub-New" --role contributor --scopes /subscriptions/{subscription-id}/resourceGroups/BackendAPI-RG --sdk-auth
+   ```
+
+3. **Verificar permisos:**
+   ```bash
+   # Verificar que el service principal tiene acceso
+   az role assignment list --assignee {client-id} --scope /subscriptions/{subscription-id}/resourceGroups/BackendAPI-RG
+   ```
 
 ### **Error: "Deployment Failed"**
 
