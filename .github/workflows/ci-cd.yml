@@ -15,6 +15,10 @@ env:
 jobs:
   build-and-test:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      checks: write
+      pull-requests: write
     
     steps:
     - name: Checkout code
@@ -57,6 +61,16 @@ jobs:
         path: 'TestResults/**/*.trx'
         reporter: dotnet-trx
         fail-on-error: false
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Upload test results
+      uses: actions/upload-artifact@v4
+      if: always()
+      with:
+        name: test-results
+        path: TestResults/
+        retention-days: 30
 
     - name: Publish code coverage
       uses: codecov/codecov-action@v3
