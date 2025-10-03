@@ -5,12 +5,19 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace BackendAPI.Controllers;
 
+/// <summary>
+/// Controlador para manejo de autenticación y autorización
+/// </summary>
 [ApiController]
 [Route("api/[controller]")]
 public class AuthController : ControllerBase
 {
     private readonly IAuthService _authService;
 
+    /// <summary>
+    /// Constructor del controlador de autenticación
+    /// </summary>
+    /// <param name="authService">Servicio de autenticación</param>
     public AuthController(IAuthService authService)
     {
         _authService = authService;

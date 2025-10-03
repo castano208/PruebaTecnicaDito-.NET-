@@ -11,6 +11,9 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace BackendAPI.Controllers;
 
+/// <summary>
+/// Controlador para manejo de usuarios
+/// </summary>
 [ApiController]
 [Route("api/[controller]")]
 [Authorize]
@@ -18,6 +21,10 @@ public class UsuariosController : ControllerBase
 {
     private readonly IMediator _mediator;
 
+    /// <summary>
+    /// Constructor del controlador de usuarios
+    /// </summary>
+    /// <param name="mediator">Mediador para manejo de comandos y consultas</param>
     public UsuariosController(IMediator mediator)
     {
         _mediator = mediator;

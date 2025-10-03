@@ -8,12 +8,19 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace BackendAPI.Controllers;
 
+/// <summary>
+/// Controlador para manejo de pedidos
+/// </summary>
 [ApiController]
 [Route("api/[controller]")]
 public class PedidosController : ControllerBase
 {
     private readonly IMediator _mediator;
 
+    /// <summary>
+    /// Constructor del controlador de pedidos
+    /// </summary>
+    /// <param name="mediator">Mediador para manejo de comandos y consultas</param>
     public PedidosController(IMediator mediator)
     {
         _mediator = mediator;

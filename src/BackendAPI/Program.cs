@@ -137,4 +137,7 @@ using (var scope = app.Services.CreateScope())
 app.Run();
 
 // Make Program class accessible for testing
+/// <summary>
+/// Clase principal del programa para configuración de la aplicación
+/// </summary>
 public partial class Program { }
